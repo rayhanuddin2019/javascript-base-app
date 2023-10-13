@@ -37,14 +37,15 @@ Module has start end callback function
 
 ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/f402ea8c-cf4f-4364-95b0-c88e39c360df)
 
-   `this.addComponent(initial_component);
-    sandbox.showComponent("months");
-   `
-
  ## MVC - component
  Create a comppoent and add to sandbox object 
  add fetch , generate html, manipulate user data
  ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/4cba165e-e265-4ef1-830d-5eefa8817306)
+
+ `
+    this.addComponent(initial_component); 
+    sandbox.showComponent("months");    
+ `
 
 Copyright (c) 2023 Rayhan Uddin. All rights reserved.
 https://codepen.io/rayhanuddin2019/pen/ExGrvVe
