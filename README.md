@@ -85,8 +85,10 @@ Module has start end callback function
   
 Copyright (c) 2023 Rayhan Uddin. All rights reserved.
 
-Inspired By 
+## Inspired By 
+
 addyosmani - https://addyosmani.com/
+
 Nicholas C. Zakas - https://www.linkedin.com/in/nzakas
 
 https://codepen.io/rayhanuddin2019/pen/ExGrvVe
