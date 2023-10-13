@@ -41,13 +41,14 @@ Module has start end callback function
  Create a comppoent and add to sandbox object 
  add fetch , generate html, manipulate user data
  ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/4cba165e-e265-4ef1-830d-5eefa8817306)
-       var initial_component = {
-       name: "months",    
-       container: document.querySelector(".mycalender"),
-       model: {
+ 
+        var initial_component = {
+        name: "months",    
+        container: document.querySelector(".mycalender"),
+        model: {
          months: []        
-       },
-       view(model) {
+        },
+        view(model) {
          const monthHTML = model.months.reduce(
            (html, month) => html + `<li>${month}</li>`,
            ""
