@@ -84,8 +84,10 @@ Module has start end callback function
      tCore.start('registered_module_name');
   
 Copyright (c) 2023 Rayhan Uddin. All rights reserved.
+
 Inspired By 
- addyosmani - https://addyosmani.com/
- Nicholas C. Zakas - https://www.linkedin.com/in/nzakas
+addyosmani - https://addyosmani.com/
+Nicholas C. Zakas - https://www.linkedin.com/in/nzakas
+
 https://codepen.io/rayhanuddin2019/pen/ExGrvVe
 
