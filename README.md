@@ -46,7 +46,12 @@ Module has start end callback function
     this.addComponent(initial_component); 
     sandbox.showComponent("months");    
  `
+## Module run
 
+  We can run single module or all module instance 
+  
+  `tCore.startAll();`
+  `tCore.start('registered_module_name');`
 Copyright (c) 2023 Rayhan Uddin. All rights reserved.
 https://codepen.io/rayhanuddin2019/pen/ExGrvVe
 
