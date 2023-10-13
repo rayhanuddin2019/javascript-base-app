@@ -16,7 +16,8 @@
 
 ## MVC 
 
- 
+ ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/6b229e86-5098-4518-b51a-e74be55744a5)
+
  ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/b8e7a276-188f-43a8-9395-baffc0dd3eca)
 
    
