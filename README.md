@@ -37,28 +37,7 @@ Module has start end callback function
 
 ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/f402ea8c-cf4f-4364-95b0-c88e39c360df)
 
-   `
-      var initial_component = {
-    name: "months",    
-    container: document.querySelector(".mycalender"),
-    model: {
-      months: []        
-    },
-    view(model) {
-      const monthHTML = model.months.reduce(
-        (html, month) => html + `<li>${month}</li>`,
-        ""
-      );
-      return `<ul class="myapp-cl-m-lst">${monthHTML}</ul>
-            `;
-    },
-
-    async controller(model) {
-      // data canbe update from rest api / ajax
-      model.months = ["january","fabruary", "march", "april"];        
-    }
-  };
-    this.addComponent(initial_component);
+   `this.addComponent(initial_component);
     sandbox.showComponent("months");
    `
 
