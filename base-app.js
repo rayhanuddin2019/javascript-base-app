@@ -1,25 +1,25 @@
 ("use strict");
 // top-level namespace
-var myApp = myApp || {};
+var dFanatics = dFanatics || {};
 /*
  * Copyright (c) 2023 Rayhan Uddin. All rights reserved.
  * https://github.com/rayhanuddin2019/
  */
 // sub-level namespace
-myApp.Utils = myApp.Utils || {};
-myApp.Models = myApp.Models || {};
-myApp.Views = myApp.Views || {};
+dFanatics.Utils = dFanatics.Utils || {};
+dFanatics.Models = dFanatics.Models || {};
+dFanatics.Views = dFanatics.Views || {};
 
 /*
  * Global two way data binding store and update
- * @usage  myApp.scopes['name'] = 'field name';
+ * @usage  dFanatics.scopes['name'] = 'field name';
  * @usage2 data-bind="name" in text field;
  * @usage2 Call from anywhere
  */
-myApp.scopes = myApp.scopes || {};
+dFanatics.scopes = dFanatics.scopes || {};
 
 /* Two Way Data binding */
-myApp.Utils.DataBind = function () {
+dFanatics.Utils.DataBind = function () {
   let bind_elements = document.querySelectorAll("[data-bind]");
 
   bind_elements.forEach(function (element) {
@@ -29,19 +29,19 @@ myApp.Utils.DataBind = function () {
 
     if (element.type === "text" || element.tagName === "TEXTAREA") {
       element.onkeyup = function () {
-        myApp.scopes[propToBind] = element.value;
+        dFanatics.scopes[propToBind] = element.value;
       };
     }
 
     if (element.tagName === "SELECT") {
       element.addEventListener("change", function () {
-        myApp.scopes[propToBind] = element.value;
+        dFanatics.scopes[propToBind] = element.value;
       });
     }
 
     if (element.type === "checkbox") {
       element.addEventListener("change", function () {
-        myApp.scopes[propToBind] = getAllCheckedelements(propToBind);
+        dFanatics.scopes[propToBind] = getAllCheckedelements(propToBind);
       });
     }
 
@@ -58,11 +58,11 @@ myApp.Utils.DataBind = function () {
 
     function addScopeProp(prop) {
       //add property if needed
-      if (!myApp.scopes.hasOwnProperty(prop)) {
+      if (!dFanatics.scopes.hasOwnProperty(prop)) {
         //value to populate with newvalue
         var value;
 
-        Object.defineProperty(myApp.scopes, prop, {
+        Object.defineProperty(dFanatics.scopes, prop, {
           set: function (newValue) {
             value = newValue;
 
@@ -91,7 +91,7 @@ myApp.Utils.DataBind = function () {
   });
 };
 
-myApp.Utils.Browser = (function (bglobal) {
+dFanatics.Utils.Browser = (function (bglobal) {
   // private members
   var is_mobile = false;
   // public members, exposed with return statement
@@ -118,7 +118,7 @@ myApp.Utils.Browser = (function (bglobal) {
  * Subscrib and notify or broadcast globally
  */
 
-myApp.getInstance = function (isettings) {
+dFanatics.getInstance = function (isettings) {
   var instance;
   function Core(settings) {
     /******************************************************************************************
@@ -136,7 +136,8 @@ myApp.getInstance = function (isettings) {
           BeforeModuleStart: function () {},
           uniqueId: uniqueId,
           container: null,
-          is_mobile: myApp.Utils.Browser.is_mobile()
+          debug : false,
+          is_mobile: dFanatics.Utils.Browser.is_mobile()
         },
         settings
       );
@@ -200,15 +201,22 @@ myApp.getInstance = function (isettings) {
 
       sandbox.showComponent = function (name) {
         this.currentComponent = this.componentsByName[name];
-
-        if (this.currentComponent) {
-          this.currentComponent.controller(this.currentComponent.model);
+        
+        if(this.currentComponent.container instanceof Element){
+          if (this.currentComponent) {
+            this.currentComponent.controller(this.currentComponent.model);
+          }
+          this.updateView();          
+        }else{
+           if(sandbox.settings.debug){
+             console.info(`HTML Element Container not found in ${name} component . You can override showcomponet from module register`);
+           }           
         }
-
-        this.updateView();
+        
       };
       // Can be override from module
-      sandbox.updateView = function () {
+      sandbox.updateView = function () {       
+
         if (this.currentComponent) {
           this.currentComponent.container.innerHTML = this.currentComponent.view(
             this.currentComponent.model
@@ -245,22 +253,27 @@ myApp.getInstance = function (isettings) {
         new Sandbox(this),
         moduleSettings
       );
-      if (
-        this.settings.hasOwnProperty("BeforeModuleStart") &&
-        typeof this.settings.BeforeModuleStart === "function"
-      ) {
-        this.settings.BeforeModuleStart(
-          moduleId,
-          moduleData[moduleId].instance
-        );
-      }
-      moduleData[moduleId].instance.init();
-      if (
-        this.settings.hasOwnProperty("AfterModuleStart") &&
-        typeof this.settings.AfterModuleStart === "function"
-      ) {
-        this.settings.AfterModuleStart(moduleId, moduleData[moduleId].instance);
-      }
+          
+      try {
+     
+          if (
+            this.settings.hasOwnProperty("BeforeModuleStart") &&
+            typeof this.settings.BeforeModuleStart === "function"
+          ) {
+            this.settings.BeforeModuleStart(
+              moduleId,
+              moduleData[moduleId].instance
+            );
+          }
+          moduleData[moduleId].instance.init();
+          if (
+            this.settings.hasOwnProperty("AfterModuleStart") &&
+            typeof this.settings.AfterModuleStart === "function"
+          ) {
+            this.settings.AfterModuleStart(moduleId, moduleData[moduleId].instance);
+          }
+        } catch (e) { console.log(e); }
+
     };
     this.stop = function (moduleId) {
       var data = moduleData[moduleId];
@@ -295,91 +308,9 @@ myApp.getInstance = function (isettings) {
   }
   instance.setSettings(isettings);
   window.addEventListener("DOMContentLoaded", function () {
-    myApp.Utils.DataBind();
+    dFanatics.Utils.DataBind();
   });
   return instance;
 };
 
-//Usage
 
-var tCore = myApp.getInstance({
-  AfterModuleStart: function (thisModule, obj) {},
-  BeforeModuleStart: function (module, obj) {}
-});
-/**
- *
- * Register Core module
- **/
-tCore.register("core_calender", function (sandbox, moduleSettings) {
-  var initial_component = {
-    name: "months",    
-    container: document.querySelector(".mycalender"),
-    model: {
-      months: []        
-    },
-    view(model) {
-      const monthHTML = model.months.reduce(
-        (html, month) => html + `<li>${month}</li>`,
-        ""
-      );
-      return `<ul class="myapp-cl-m-lst">${monthHTML}</ul>
-            `;
-    },
-
-    async controller(model) {
-      // data canbe update from rest api / ajax
-      model.months = ["january","fabruary", "march", "april"];        
-    }
-  };
-  sandbox.init = function () {
-    this.addComponent(initial_component);
-    this.router();
-  };
-
-  sandbox.router = function () {
-    window.addEventListener("DOMContentLoaded", function () {
-      sandbox.showComponent("months");
-      myApp.scopes["div"] = "init value";
-
-      sandbox.Observable.notify(" Notify After Dom Ready");
-    });
-
-    sandbox.Observable.subscribe(function (data) {
-      console.log("subcriber 1", data);
-    });
-
-    sandbox.Observable.subscribe(function (data) {
-      console.log("subcriber 2" + data);
-    });
-  };
-  return sandbox;
-});
-
-tCore.startAll();
-
-document.querySelector(".wrapper").addEventListener("click", function () {
-  if (this.classList.contains("flip")) {
-    this.classList = "wrapper";
-  } else {
-    this.classList = "wrapper flip";
-  }
-});
-document.querySelectorAll(".item").forEach((item, index) => {
-  item.addEventListener("click", function (event) {
-    myApp.scopes["bike"] = ["Bike"];
-    myApp.scopes["radio"] = ["Car"];
-    myApp.scopes["select"] = "audi";
-
-    //              this.changeTitle(this._list, index)
-
-    //       let changeInfo = {
-    //         detail: {
-    //           value: this._value,
-    //           name: this._name
-    //         },
-    //         bubbles: true
-    //       }
-    //       let changeEvent = new CustomEvent('change', changeInfo)
-    //       this.dispatchEvent(changeEvent)
-  });
-});

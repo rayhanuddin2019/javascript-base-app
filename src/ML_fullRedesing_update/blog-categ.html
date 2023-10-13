@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Marbslifestyle Redesign</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+
+    </head>
+    <body>
+        <header class="header_container sticky_header">
+            <div class="header_area plr">
+                <div class="marquee_style_area plr">
+                    <div class="news_rating_box center-content">
+                        <div class="news_rating_box_inner position-relative">
+                            <div class="marquee_item_wrap flex-wrap justify-content-between " id="marquee_json">
+                                <div class="marquee_item_box align-center flex-nowrap">
+                                    <div class="marquee_item_icon">
+                                        <img src="assets/images/check.svg" alt="marbslifestyle check icon"/>
+                                    </div>
+                                    <div class="marquee_item_prices">
+                                        <strong class="sf fw-300 font-s16">Discover the hidden secrets from Marbella</strong>
+                                    </div>
+                                </div>
+
+                                <div class="marquee_item_box align-center flex-nowrap">
+                                    <div class="marquee_item_icon">
+                                        <img src="assets/images/check.svg" alt="marbslifestyle check icon"/>
+                                    </div>
+                                    <div class="marquee_item_prices">
+                                        <strong class="sf fw-300 font-s16">Early acces to the best and newest venues</strong>
+                                    </div>
+                                </div>
+
+                                <div class="marquee_item_box align-center flex-nowrap">
+                                    <div class="marquee_item_icon">
+                                        <img src="assets/images/check.svg" alt="marbslifestyle check icon"/>
+                                    </div>
+                                    <div class="marquee_item_prices">
+                                        <strong class="sf fw-300 font-s16">Local experts with over 15 years experience</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="rating_wrap position-absolute left0 top0 flex-wrap align-center">
+                                <div class="rating_box flex-wrap flex-nowrap align-center">
+                                    <div class="rating_box_inner flex-wrap flex-nowrap align-center">
+                                        <div class="star_box_wrap flex-wrap flex-nowrap align-center">
+                                            <div class="feedback_star">
+                                                <img src="assets/images/header_star_single.svg" alt="Header star rating" />
+                                            </div>
+                                            <span class="sf fw-300 font-s16">9 / 10</span>
+                                        </div>
+                                        
+                                        <div class="total_review">
+                                            <small class="sf fw-300 font-s16">55 reviews</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="trustpilot_img">
+                                        <img src="assets/images/logo_trustpilot.svg" alt="trustpilot" />
+                                    </div>
+                                </div>
+
+                                <div class="footer_socila_media_box">
+                                    <ul class="flex-wrap align-center">
+                                        <li class="fb_social">
+                                            <a href="https://www.facebook.com/Marbslifestyle/" class="position-relative" target="_blank" rel="ugc">
+                                                <img class="normal_icon" src="assets/images/social_facebook_logo_icon.svg" alt="marbslifestyle social icon"/>
+                                                <img class="hover_icon position-absolute left0 top0" src="assets/images/social_facebook_logo_icon_hover.svg" alt="marbslifestyle social icon"/>
+                                            </a>
+                                        </li>
+
+                                        <li class="ins_social">
+                                            <a href="https://www.instagram.com/marbslifestyle.com_/?hl=en" class="position-relative" target="_blank" rel="ugc">
+                                                <img class="normal_icon" src="assets/images/social_instagram_logo_icon.svg" alt="marbslifestyle social icon"/>
+                                                <img class="hover_icon position-absolute left0 top0" src="assets/images/social_instagram_logo_icon_hover.svg" alt="marbslifestyle social icon"/>
+                                            </a>
+                                        </li>
+
+                                        <li class="youtube">
+                                            <a href="https://www.youtube.com/@Marbslifestyle" class="position-relative" target="_blank" rel="ugc">
+                                                <img class="normal_icon" src="https://marbslifestyle.com/wp-content/uploads/2022/10/youtube-normal.svg" alt="marbslifestyle social icon"/>
+                                                <img class="hover_icon position-absolute left0 top0" src="https://marbslifestyle.com/wp-content/uploads/2022/10/youtube-hover.svg" alt="marbslifestyle social icon"/>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="header_wrap center-content">
+                    <div class="header_box position-relative flex-wrap align-center">
+                        <div class="logo_wrap">
+                            <a class="only_desktop_view" href="#"><img src="assets/images/logo-marbslifestyle.svg" alt="marbslifestyle logo"/></a>
+                            <a class="only_mobile_view" href="#"><img src="assets/images/crown-marbslifestyle-leftaligned.svg" alt="marbslifestyle logo"/></a>
+                        </div>
+
+                        <nav class="main_menu_wrap">
+                            <ul id="menu" class="menu_list flex-wrap align-center justify-content-between">
+                                <li class="position-relative position-content-after left0 top0 menu_map_pin font-s16 fw-300"><a class="position-relative ion-down position-content-before left0 top0" href="#">Location &amp; Services Guide</a>
+                                    <ul class="position-content-before position-content-after left0 top0 position-absolute">
+                                        <li class="font-s16 fw-300"><a href="#">Beach & Pool Clubs</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">Restaurants</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">Hotels & Resorts</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">Night Clubs</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">Golf Clubs & Courses</a></li>
+                                        <li class="view_all_btn font-s16 fw-300"><a class="position-content-after left0 top0 position-relative" href="#">View all Locations</a></li>
+                                    </ul>
+                                </li>
+                                <li class="position-relative position-content-after left0 top0 font-s16 fw-300"><a class="position-relative ion-down position-content-before left0 top0" href="#">Inspiration</a>
+                                    <ul class="position-content-before position-content-after left0 top0 position-absolute left0 top0">
+                                        <li class="font-s16 fw-300"><a href="#">Blogs</a>
+                                            <ul class="position-absolute left0 top0 position-content-after left0 top0 flex-wrap align-center child-sub-menu">
+                                                <li class="font-s16 fw-300"><a href="#">Tips</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">Restaurants</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">Thing To Do</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">Hotels & Resorts</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">Holidays</a></li>
+                                                <li class="view_all_btn font-s16 fw-300"><a class="position-content-after left0 top0 position-relative" href="#">View all Blogs</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="font-s16 fw-300"><a href="#">Our Choices</a>
+                                            <ul class="position-absolute left0 top0 position-content-after left0 top0 flex-wrap align-center child-sub-menu">
+                                                <li class="font-s16 fw-300"><a href="#">About Marbella</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">History of Marbella</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">Marbella FAQ</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">What to do in Marbella</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">What to do with kids in Marbella</a></li>
+                                                <li class="view_all_btn font-s16 fw-300"><a class="position-content-after left0 top0 position-relative" href="#">View all Articles</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="font-s16 fw-300"><a href="#">Marbella & Surroundings</a>
+                                            <ul class="position-absolute left0 top0 position-content-after left0 top0 flex-wrap align-center child-sub-menu">
+                                                <li class="font-s16 fw-300"><a href="#">Top 25 Restaurants in Marbella</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">Top 10 Beach Clubs in Marbella</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">Top 10 Restaurants in Malaga</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">Top 10 Golf Courses in Marbella</a></li>
+                                                <li class="font-s16 fw-300"><a href="#">Top 6 Paella in Marbella</a></li>
+                                                <li class="view_all_btn font-s16 fw-300"><a class="position-content-after left0 top0 position-relative" href="#">View all Our Choices</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="position-relative position-content-after left0 top0 font-s16 fw-300"><a class="position-relative ion-down position-content-before left0 top0" href="#">Rentals</a>
+                                    <ul class="immediate_sub_menu position-content-before position-content-after left0 top0 position-absolute left0 top0">
+                                        <li class="font-s16 fw-300"><a href="#">Apartments</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">Penthouses</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">Houses</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">Villas</a></li>
+                                        <li class="view_all_btn font-s16 fw-300"><a class="position-content-after left0 top0 position-relative" href="#">View all Rentals</a></li>
+                                    </ul>
+                                </li>
+                                <li class="position-relative position-content-after left0 top0 font-s16 fw-300"><a class="position-relative ion-down position-content-before left0 top0" href="#">Properties</a>
+                                    <ul class="immediate_sub_menu position-content-before position-content-after left0 top0 position-absolute left0 top0">
+                                        <li class="font-s16 fw-300"><a href="#">Apartments</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">Penthouses</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">Houses</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">Villas</a></li>
+                                        <li class="font-s16 fw-300"><a href="#">New Developments</a></li>
+                                        <li class="view_all_btn font-s16 fw-300"><a class="position-content-after left0 top0 position-relative" href="#">View all Properties</a></li>
+                                    </ul>
+                                </li>
+                                <li class="font-s16 fw-300"><a href="#">About us</a></li>
+                            </ul>
+
+                            <div class="menu_search_bx position-absolute left0 top0">
+                                <div class="menu_search_col position-relative">
+                                    <input id="menu_search_field" class="border border-radius-btn" type="text" placeholder="What are you looking for?">
+                                    <button class="menu_search_icon position-absolute left0 top0"></button>
+                                </div>
+                            </div>
+                        </nav>
+
+                        <div class="header_right_wrap position-absolute right0 top0 align-center flex-nowrap margin-0-auto">
+                            <div class="header_btn_wrap commen_btn_wrap flex-wrap align-center">
+                                <div class="btn_wrap event_btn_wrap flex-wrap align-center">
+                                    <a class="commen_btn event_btn header_btn golden-bg-color font-s16 fw-300 flex-wrap align-center flex-nowrap" href="#"><img src="assets/images/ion_calendar.svg" alt="marbslifestyle button key" />Events</a>
+                                </div>
+        
+                                <div class="btn_wrap signin_btn_wrap flex-wrap align-center">
+                                    <a class="commen_btn signin_btn header_btn success-bg-color font-s16 fw-300 flex-wrap align-center flex-nowrap" href="#"><img src="assets/images/icon_key_button_header2.svg" alt="marbslifestyle button key" /><span>Sign in</span></a>
+                                </div>
+
+                                <div class="hamburger_bar position-absolute left0 top0"><span></span><span></span><span></span></div>
+                            </div>
+                        </div>
+
+                        <div class="mobile_menu">
+                            <div id="menu_holder" class="white-bg-color"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="single_banner_area plr position-relative bg-cover no-repeat px-70">
+            <style>
+                .single_banner_area {
+                    background: linear-gradient(0deg, rgba(16, 42, 102, 0.62), rgba(16, 42, 102, 0.62)) no-repeat, url(https://marbslifestyle.com/wp-content/webp-express/webp-images/uploads/2023/02/Puerto-banus-website-5-1-1920x320.jpg.webp);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                @media only screen and (max-width: 580px) {
+                    .single_banner_area {background-size: auto 500px!important;}
+                }
+
+            </style>
+            <div class="single_banner_wrap center-content pb-30 pbmb-40 pr-380">
+                <div class="breadcrumbs_info mlf w-930">
+                    <span><a href="https://ml-potimize.ddmg.tech" class="home"><span>Home</span></a></span>
+                    <i class="ion-ios-arrow-forward"></i> 
+                    <span><span class="post post-page current-item">Blog</span></span>
+                </div>
+
+                <div class="single_info_area position-relative w-930">
+                    <div class="sun_icon"><img src="https://marbslifestyle.com/wp-content/webp-express/webp-images/uploads/2023/03/Icon_Restaurant_white-148px-with-dropshadow.png.webp" alt="The Marbella Location Guide"></div>
+                    <h1 class="sf white-color">Restaurants</h1>
+                    <div class="short_content show-on-dsk mlf">
+                        <p class="make-3line">Daily inspiration from Marbella, about the finest hotspots of Marbella. From the best new restaurants and reviews of the popular beach clubs. Hiking trails to go into the beautiful nature of the Marbella area and things to do with the kids. Live the ultimate Marbella experience.</p>
+                        <div class="b-show-more-wrap text-center w-100 only_mobile_view">
+                            <a class="b-show-more mlf white-color ion-down position-relative" href="javascript:;">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-area only_desktop_view plr ">
+            <div class="sidebar-wrap position-relative center-content">
+                <div class="position-absolute right0" style="margin-top:-309px; width: 26.44%;">
+                    <div class="events-list-wrap blue-bg radius-btm8">
+                        <div class="events-title position-relative">
+                            <div class="line_bar golden-bg-color"></div>
+                            <h3 class="white-color sf fw-300">Upcoming events</h3>
+                            <span class="white-color fw-400 blf font-s12"> Today: March 1st</span>
+                        </div>
+
+                        <div class="upEvent_itemWrap">
+                           <div class="upEvent_itemSingle flex-nowrap">
+                              <div class="upEvent_itemDate">
+                                 <div class="upEvent_itemDate_inner">
+                                    <img class="calendar_norma" src="assets/images/calendar_normal.svg" alt="">
+                                    <img class="calendar_hover" src="assets/images/calendar_hover.svg" alt="">
+                                    <div class="upEvent_Date position-absolute d-flex flex-direction-column align-center w-100 left0">
+                                       <strong class="white-color sf fw-700 font-s16">01</strong>
+                                       <span class="white-color fw-300">MAR</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="upEvent_itemInfo">
+                                 <h4 class="blf fw-500 make-1line font-s14 white-color"> <a href="#" class="white-color">Closing Party Ocean Club Marbella</a></h4>
+                                 <span class="white-color font-s12 mlf">12:00h - 16:00h</span>
+                                 <a href="#" class="upEvent_btn white-color blf font-s12">View event</a>
+                              </div>
+                           </div>
+
+                           <div class="upEvent_itemSingle flex-nowrap">
+                              <div class="upEvent_itemDate">
+                                 <div class="upEvent_itemDate_inner">
+                                    <img class="calendar_norma" src="assets/images/calendar_normal.svg" alt="">
+                                    <img class="calendar_hover" src="assets/images/calendar_hover.svg" alt="">
+                                    <div class="upEvent_Date position-absolute d-flex flex-direction-column align-center w-100">
+                                       <strong class="white-color sf fw-700 font-s16">02</strong>
+                                       <span class="white-color fw-300">MAR</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="upEvent_itemInfo">
+                                 <h4 class="blf fw-500 make-1line font-s14 white-color"> <a href="#" class="white-color">Closing Party Ocean Club Marbella</a></h4>
+                                 <span class="white-color font-s12 mlf">12:00h - 16:00h</span>
+                                 <a href="#" class="upEvent_btn white-color blf font-s12">View event</a>
+                              </div>
+                           </div>
+
+                           <div class="upEvent_itemSingle flex-nowrap">
+                              <div class="upEvent_itemDate">
+                                 <div class="upEvent_itemDate_inner">
+                                    <img class="calendar_norma" src="assets/images/calendar_normal.svg" alt="">
+                                    <img class="calendar_hover" src="assets/images/calendar_hover.svg" alt="">
+                                    <div class="upEvent_Date position-absolute d-flex flex-direction-column align-center w-100">
+                                       <strong class="white-color sf fw-700 font-s16">03</strong>
+                                       <span class="white-color fw-300">MAR</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="upEvent_itemInfo">
+                                 <h4 class="blf fw-500 make-1line font-s14 white-color"> <a href="#" class="white-color">Closing Party Ocean Club Marbella</a></h4>
+                                 <span class="white-color font-s12 mlf">12:00h - 16:00h</span>
+                                 <a href="#" class="upEvent_btn white-color blf font-s12">View event</a>
+                              </div>
+                           </div>
+
+                           <div class="upEvent_itemSingle flex-nowrap">
+                              <div class="upEvent_itemDate">
+                                 <div class="upEvent_itemDate_inner">
+                                    <img class="calendar_norma" src="assets/images/calendar_normal.svg" alt="">
+                                    <img class="calendar_hover" src="assets/images/calendar_hover.svg" alt="">
+                                    <div class="upEvent_Date position-absolute d-flex flex-direction-column align-center w-100">
+                                       <strong class="white-color sf fw-700 font-s16">04</strong>
+                                       <span class="white-color fw-300">MAR</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="upEvent_itemInfo">
+                                 <h4 class="blf fw-500 make-1line font-s14 white-color"> <a href="#" class="white-color">Closing Party Ocean Club Marbella</a></h4>
+                                 <span class="white-color font-s12 mlf">12:00h - 16:00h</span>
+                                 <a href="#" class="upEvent_btn white-color blf font-s12">View event</a>
+                              </div>
+                           </div>
+
+                           <a class="view-all-btn mlf ion-ios-arrow-forward ion-ios-right position-relative white-color font-s14 fw-300" href="#">View all upcoming events</a>
+
+                        </div>
+                    </div>
+
+                    <div class="add_box white-bg-color d-flex align-center justify-content-center">
+                        <a href="#">
+                            <img class="w-100 ad-300x250" src="https://marbslifestyle.com/wp-content/uploads/2023/08/PICNICMARBELLA-static_banner-300x250@2x-1.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="most-reset-box white-bg-color">
+                        <div class="events-title position-relative">
+                            <div class="line_bar golden-bg-color"></div>
+                            <h3 class="blue-color sf fw-300">Now trending</h3>
+                        </div>
+
+                        <div class="most-reset-post flex-nowrap">
+                            <div class="reset-post-photo">
+                                <a href="#">
+                                  <img class="object-fit-cover w-100 h-100" src="assets/images/old-town-33-post-320x320.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="reset-post-info">
+                                <h4 class="font-s16 mfdm blue-color fw-400"> <a href="#" class="blue-color make-3line">The 12 best restaurants in Marbella Old Town</a></h4>
+                                <p class="font-s14 blue-color fw-400"><a href="#" class="blue-color make-1line">Having dinner in Marbella Old town One of our favorites, having dinner in Marbella Old Town If you’re looking for a truly authentic dining experience in</a></p>
+                                <span class="date-time blue-color font-s14 d-block "> <a href="#" class="blue-color">16 Mar 2023</a></span>
+                            </div>
+                        </div>
+
+                        <div class="most-reset-post flex-nowrap">
+                            <div class="reset-post-photo">
+                                <a href="#">
+                                  <img class="object-fit-cover w-100 h-100" src="assets/images/old-town-33-post-320x320.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="reset-post-info">
+                                <h4 class="font-s16 mfdm blue-color fw-400"> <a href="#" class="blue-color make-3line">The 12 best restaurants in Marbella Old Town</a></h4>
+                                <p class="font-s14 blue-color fw-400"><a href="#" class="blue-color make-1line">Having dinner in Marbella Old town One of our favorites, having dinner in Marbella Old Town If you’re looking for a truly authentic dining experience in</a></p>
+                                <span class="date-time blue-color font-s14 d-block "> <a href="#" class="blue-color">16 Mar 2023</a></span>
+                            </div>
+                        </div>
+
+                        <div class="most-reset-post flex-nowrap">
+                            <div class="reset-post-photo">
+                                <a href="#">
+                                  <img class="object-fit-cover w-100 h-100" src="assets/images/old-town-33-post-320x320.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="reset-post-info">
+                                <h4 class="font-s16 mfdm blue-color fw-400"> <a href="#" class="blue-color make-3line">The 12 best restaurants in Marbella Old Town</a></h4>
+                                <p class="font-s14 blue-color fw-400"><a href="#" class="blue-color make-1line">Having dinner in Marbella Old town One of our favorites, having dinner in Marbella Old Town If you’re looking for a truly authentic dining experience in</a></p>
+                                <span class="date-time blue-color font-s14 d-block "> <a href="#" class="blue-color">16 Mar 2023</a></span>
+                            </div>
+                        </div>
+
+                        <div class="most-reset-post flex-nowrap">
+                            <div class="reset-post-photo">
+                                <a href="#">
+                                  <img class="object-fit-cover w-100 h-100" src="assets/images/old-town-33-post-320x320.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="reset-post-info">
+                                <h4 class="font-s16 mfdm blue-color fw-400"> <a href="#" class="blue-color make-3line">The 12 best restaurants in Marbella Old Town</a></h4>
+                                <p class="font-s14 blue-color fw-400"><a href="#" class="blue-color make-1line">Having dinner in Marbella Old town One of our favorites, having dinner in Marbella Old Town If you’re looking for a truly authentic dining experience in</a></p>
+                                <span class="date-time blue-color font-s14 d-block "> <a href="#" class="blue-color">16 Mar 2023</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add_box white-bg-color d-flex align-center justify-content-center">
+                        <a href="#">
+                            <img class="w-100 ad-300x600" src="https://marbslifestyle.com/wp-content/uploads/2023/08/CARReMARKETING-static_banner-300x600@2x.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="locations_category_area plr px-70">
+            <div class="locations_category_box center-content">
+                <div class="content_left_part">
+
+                    <div class="location_detail_filter_box pt-40 mb-fixed">
+                        <a href="javascript:void(0)" class="search-close-btn only_mobile_view font-s14 pb-md-20">Go back</a>
+                        <div class="search_category_top d-flex align-center pb-12 pb-md-20">
+                            <a href="javascript:;" class="blf font-s14 active" data-tab="1">Search by category</a>
+                            <a href="javascript:;" data-tab="2" class="blf font-s14">Search by name</a>
+                            <a href="javascript:;" class="reset_all_location_filter bg-position-center blf font-s14 ml-auto fw-300 only_desktop_view">Remove all filters</a>
+                        </div>
+
+                        <div class="tabs-content">
+                            <div class="tab-item tab-item-1 active">
+                                <form action="#" class="d-flex flex-dir-col-mb">
+                                    <div class="filter-item position-relative filter-item-1 wp-34 w-mb-100">
+                                        <a href="#" class="drp-btn mlf blue-color position-relative d-flex align-center w-100">Category</a>
+                                        <div class="filter_checkbox_area">
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_11" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_11">Category 1 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_12" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_12">Category 2 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_13" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_13">Category 3 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_14" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_14">Category 4 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_15" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_15">Category 5 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_16" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_16">Category 6 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_17" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_17">Category 7 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_18" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_18">Category 8 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_19" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_19">Category 9 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_110" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_110">Category 10 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-item position-relative filter-item-2 wp-22 w-mb-100">
+                                        <a href="#" class="drp-btn mlf blue-color position-relative d-flex align-center w-100">Subcategory</a>
+                                        <div class="filter_checkbox_area">
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_21" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_21">Subcategory 1 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_22" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_22">Subcategory 2 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_23" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_23">Subcategory 3 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_24" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_24">Subcategory 4 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_25" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_25">Subcategory 5 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_26" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_26">Subcategory 6 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_27" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_27">Subcategory 7 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_28" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_28">Subcategory 8 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_29" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_29">Subcategory 9 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_210" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_210">Subcategory 10 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-item position-relative filter-item-3 wp-22 w-mb-100">
+                                        <a href="#" class="drp-btn mlf blue-color position-relative d-flex align-center w-100">Tag</a>
+                                        <div class="filter_checkbox_area">
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_31" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_31">Tag 1 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_32" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_32">Tag 2 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_33" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_33">Tag 3 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_34" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_34">Tag 4 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-item position-relative filter-item-4 wp-22 w-mb-100">
+                                        <a href="#" class="drp-btn mlf blue-color position-relative d-flex align-center w-100">Sort</a>
+                                        <div class="filter_checkbox_area">
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_41" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_41">Sort 1 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input class="loc-cat-radio-check" type="checkbox" id="radio_42" name="radio">
+                                                <label class="w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for="radio_42">Sort 2 <span class="position-relative transition-all-ease-03s border-50-p"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-item tab-item-2">
+                                <input type="search" class="cat-search-by-name-input w-100 white-bg-color outline-0" placeholder="Search by name">
+                                <button type="submit" class="cat-search-by-name-btn position-absolute white-color text-center no-repeat pointer transition-all-ease-03s h-100 bg-position-center outline-0"></button>
+                            </div>
+                        </div>
+                        <div class="search-cat-result blf fw-400 font-s14 pt-13 only_desktop_view">4 search results</div>
+                        <div class="search-action-md d-flex flex-col pt-40">
+                            <a href="javascript:;" class="reset_all_location_filter bg-position-center blf margin-0-auto font-s14 fw-300">Remove all filters</a>
+                            <button type="submit" class="filter-search-btn border-0 outline-0 mt-25 golden-bg-color fw-300 white-color blf text-center">SEARCH</button>
+                        </div>
+                    </div>
+
+                    <div class="ddmg-location-mobile-search pt-13 only_mobile_view">
+                        <form action="#">
+                            <div class="b-search-wrap d-flex align-center position-relative white-bg-color">
+                                <span class="all-filter-btn position-absolute no-repeat"></span>
+                                <input type="text" placeholder="What are you looking for?" class="h-100 border-0 bg-color-none outline-0 font-s16">
+                                <button type="submit" class="loc-btn-mb border-0 bg-color-none h-100 bg-position-center no-repeat"></button>
+                                <span class="filter-toggle-btn bg-position-center no-repeat pointer h-100"></span>
+                            </div>
+                        </form>
+                    </div>
+
+                   
+                    <div class="blog_catg_box slide-same-height">
+                        <h2 class="sf fw-300 blue-color">Daily inspiration</h2>
+                        <div class="blog_catg_grid d-flex flex-wrap ">
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_style_wrap">
+                                <div class="blog_style_img position-relative w-100">
+                                    <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                                </div>
+                
+                                <div class="blog_style_info_bx">
+                                    <div class="blog_style_info">
+                                        <div class="blog_catg_name">
+                                            <span class="mlf font-s12">Accommodations</span>
+                                        </div>
+                
+                                        <div class="blog_catg_title_info typescale-style">
+                                            <h6><a class="sf make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                            <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                        <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                        <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="more_location text-center"><a class="mlf ion-down position-relative blue-color font-s14" href="#">View more</a></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="our-choice-area plr px-70 gray-bg-section only_desktop_view">
+            <div class="our-choice-title center-content">
+                <div class="d-flex justify-content-between max-1208">
+                   <h3 class="fw-400 sf blue-color"> Our Choice</h3>
+                   <a class="view-all-btn mlf ion-ios-arrow-forward ion-ios-right position-relative blue-color font-s14" href="#">View all our choices</a>
+               </div>
+            </div>
+            <div class="our-choice-content center-content">
+                <div class="our-choice-slider-wrapper">
+                    <div class="our-choice-slider owl-carousel">
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/puente-romano-logo_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/puente-romano-logo.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/Logo-Rosas-Cafe_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/Logo-Rosas-Cafe-1.jpg" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-nosso-circulo-npng_Mesa_de_trabajo_1_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-nosso-circulo-npng_Mesa_de_trabajo_1.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logomark-momento_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logomark-momento.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/Logo-Bistro-Casanis_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/Logo-Bistro-Casanis-1.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/lobito-de-mar-logo_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/lobito-de-mar-logo.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/cappuccino-logo_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/cappuccino-logo.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-1111_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-1111.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-trocadero_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-trocadero.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-aleli_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-aleli.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-playapadre_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-playapadre.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-beachhouse_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-beachhouse.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-nobumarbella_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-nobumarbella.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-nu_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-nu.png" alt="">
+                           </a>
+                        </div>
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/puente-romano-logo_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/puente-romano-logo.png" alt="">
+                           </a>
+                        </div>
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/Logo-Rosas-Cafe_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/Logo-Rosas-Cafe-1.jpg" alt="">
+                           </a>
+                        </div>
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-nosso-circulo-npng_Mesa_de_trabajo_1_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-nosso-circulo-npng_Mesa_de_trabajo_1.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logomark-momento_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logomark-momento.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/Logo-Bistro-Casanis_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/Logo-Bistro-Casanis-1.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/lobito-de-mar-logo_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/lobito-de-mar-logo.png" alt="">
+                           </a>
+                        </div>
+
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/cappuccino-logo_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/cappuccino-logo.png" alt="">
+                           </a>
+                        </div>
+                        <div class="our-choice-item">
+                           <a href="#">
+                               <img class="normal-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-1111_hover.png" alt="">
+                               <img class="hover-img" src="https://marbslifestyle.com/wp-content/uploads/2022/12/logo-1111.png" alt="">
+                           </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog_slider_area plr px-70">
+            <div class="blog_slider top_blog_post center-content">
+                <div class="content_left_part">
+                    <h3 class="fw-400 sf blue-color">Must reads for the perfect stay</h3>
+                    <div class="blog_re_slider owl-carousel w-auto-100 slide-same-height blog-normal-style">
+                        <div class="blog_style_wrap">
+                            <div class="blog_style_img position-relative w-100">
+                                <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                            </div>
+                            <div class="blog_style_info_bx blog-col1-info">
+                                <div class="blog_style_info">
+                                    <div class="blog_catg_title_info typescale-style">
+                                        <h6 class="sf"><a class="make-3line" href="#">Finding the Perfect Balance</a></h6>
+                                        <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                    </div>
+                                </div>
+            
+                                <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                    <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                    <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_style_wrap">
+                            <div class="blog_style_img position-relative w-100">
+                                <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                            </div>
+            
+                            <div class="blog_style_info_bx blog-col1-info">
+                                <div class="blog_style_info">
+                                    <div class="blog_catg_title_info typescale-style">
+                                        <h6 class="sf"><a class="make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                        <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                    </div>
+                                </div>
+            
+                                <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                    <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                    <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_style_wrap">
+                            <div class="blog_style_img position-relative w-100">
+                                <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                            </div>
+                            <div class="blog_style_info_bx blog-col1-info">
+                                <div class="blog_style_info">
+                                    <div class="blog_catg_title_info typescale-style">
+                                        <h6 class="sf"><a class="make-3line" href="#">Finding the Perfect Balance</a></h6>
+                                        <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                    </div>
+                                </div>
+            
+                                <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                    <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                    <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_style_wrap">
+                            <div class="blog_style_img position-relative w-100">
+                                <a href="#"><img class="w-100 blog_main_img" decoding="async" src="https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt="Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                            </div>
+            
+                            <div class="blog_style_info_bx blog-col1-info">
+                                <div class="blog_style_info">
+                                    <div class="blog_catg_title_info typescale-style">
+                                        <h6 class="sf"><a class="make-3line" href="#">Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella</a></h6>
+                                        <p class="mlf make-2line only_desktop_view">Discovering Marbella’s Best Family-Friendly Luxury Hotels A holiday in Marbella is not just about enjoying the sun-kissed beaches and savoring the rich Spanish culture. For families, it’s about creating unforgettable memories without compromising on luxury and comfort. Fortunately, Marbella offers an array of hotels that perfectly blend opulence for parents with an environment where kids…</p>
+                                    </div>
+                                </div>
+            
+                                <div class="blog_bottm_style position-relative position-content-after d-flex align-center justify-content-between">
+                                    <a href="#" class="read_more_btn mlf position-relative position-content-after ion-ios-arrow-forward position-content-before">Read more</a>
+                                    <span class="blog_date mlf font-s12">15 Sep 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blue_newslater_area blue-bg plr px-70">
+            <div class="blue_newslater center-content d-flex align-center flex-dir-col-mb">
+                <div class="content_left_part d-flex align-center flex-dir-col-mb justify-content-between">
+                    <div class="news_letter_title"> <p class="mlf white-color"><span>Ready to unlock the secrets of Marbella? <br> <span>Get weekly updates!</span> <img src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/icon_key_button3.svg" alt=""></span></p> </div>
+                    <div class="news_letter_submit_box">
+                        <div class="_form-content">
+                            <input type="text" id="email" name="email" placeholder="Type your email" required="" data-name="email">
+                            <button id="_form_48_submit" class="_submit" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single_cate_area plr light-gray-bg px-70">
+            <div class="center-content">
+                <div class="content_left_part"> 
+                    <div class="location-guide-box">
+                        <div class="blog-common-title d-flex align-center justify-content-between pb-30">
+                            <h2 class="sf fw-300 blue-color"> Popular, our location guide</h2>
+                            <a class="only_desktop_view view-all-btn mlf ion-ios-arrow-forward ion-ios-right position-relative blue-color font-s14" href="#">View all</a>
+                        </div> 
+
+                        <div class="blog-categorie d-flex flex-wrap">
+                            <div class="blog-cat-item position-relative">
+                                <a href="#"> 
+                                    <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/04/Anantara-website-2-1-600x440-600x0.jpeg" alt="">
+                                    <div class="blog-cat-inner position-absolute d-flex align-center  flex-direction-column w-100 h-100 justify-content-center">
+                                        <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/03/Icon_Accomodations_white-148px-with-dropshadow-0x160.png" alt="">
+                                        <span class="font-s16 white-color mlf">Restaurants</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-cat-item position-relative">
+                                <a href="#"> 
+                                    <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/04/Anantara-website-2-1-600x440-600x0.jpeg" alt="">
+                                    <div class="blog-cat-inner position-absolute d-flex align-center  flex-direction-column w-100 h-100 justify-content-center">
+                                        <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/03/Icon_Accomodations_white-148px-with-dropshadow-0x160.png" alt="">
+                                        <span class="font-s16 white-color mlf">Nightclubs</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-cat-item position-relative">
+                                <a href="#"> 
+                                    <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/04/Anantara-website-2-1-600x440-600x0.jpeg" alt="">
+                                    <div class="blog-cat-inner position-absolute d-flex align-center  flex-direction-column w-100 h-100 justify-content-center">
+                                        <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/03/Icon_Accomodations_white-148px-with-dropshadow-0x160.png" alt="">
+                                        <span class="font-s16 white-color mlf">Golf Clubs & Courses</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-cat-item position-relative">
+                                <a href="#"> 
+                                    <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/04/Anantara-website-2-1-600x440-600x0.jpeg" alt="">
+                                    <div class="blog-cat-inner position-absolute d-flex align-center  flex-direction-column w-100 h-100 justify-content-center">
+                                        <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/03/Icon_Accomodations_white-148px-with-dropshadow-0x160.png" alt="">
+                                        <span class="font-s16 white-color mlf">Car Rental</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-cat-item position-relative">
+                                <a href="#"> 
+                                    <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/04/Anantara-website-2-1-600x440-600x0.jpeg" alt="">
+                                    <div class="blog-cat-inner position-absolute d-flex align-center  flex-direction-column w-100 h-100 justify-content-center">
+                                        <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/03/Icon_Accomodations_white-148px-with-dropshadow-0x160.png" alt="">
+                                        <span class="font-s16 white-color mlf">Boat Charters</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-cat-item position-relative">
+                                <a href="#"> 
+                                    <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/04/Anantara-website-2-1-600x440-600x0.jpeg" alt="">
+                                    <div class="blog-cat-inner position-absolute d-flex align-center  flex-direction-column w-100 h-100 justify-content-center">
+                                        <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/03/Icon_Accomodations_white-148px-with-dropshadow-0x160.png" alt="">
+                                        <span class="font-s16 white-color mlf">Hotels & Resorts</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-cat-item position-relative">
+                                <a href="#"> 
+                                    <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/04/Anantara-website-2-1-600x440-600x0.jpeg" alt="">
+                                    <div class="blog-cat-inner position-absolute d-flex align-center  flex-direction-column w-100 h-100 justify-content-center">
+                                        <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/03/Icon_Accomodations_white-148px-with-dropshadow-0x160.png" alt="">
+                                        <span class="font-s16 white-color mlf">Sport & Gym</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-cat-item position-relative">
+                                <a href="#"> 
+                                    <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/04/Anantara-website-2-1-600x440-600x0.jpeg" alt="">
+                                    <div class="blog-cat-inner position-absolute d-flex align-center  flex-direction-column w-100 h-100 justify-content-center">
+                                        <img src="https://cdn-hjemf.nitrocdn.com/FrpLbKcuZALztiQRqLjOcyxSSsdWOQWI/assets/images/optimized/rev-f93148e/marbslifestyle.com/wp-content/uploads/2023/03/Icon_Accomodations_white-148px-with-dropshadow-0x160.png" alt="">
+                                        <span class="font-s16 white-color mlf">Shopping</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="plr px-70">
+            <div class="center-content">
+                <div class="content_left_part typescale-style ">
+                    <div class="seo-text-area read-more-by-ele-number d-flex flex-direction-column">
+                        <h2 class="sf fw-300">The location and inspiration guide</h2>
+
+                        <p> <strong>New in town, Marbslifestyle.com the <a href="https://marbslifestyle.com/locations/" class="position-relative blue-color">ultimate guide</a>  to not miss a thing in and around Marbella. From the best restaurants to the best (beach and pool) parties. From daily inspiration via the <a href="https://marbslifestyle.com/blog/"class="position-relative blue-color">blog</a> to <a href="https://marbslifestyle.com/reviews/" class="position-relative blue-color" >reviews</a>. We have put together the most complete overview for the discerning Marbella visitor. Only the best is good enough.</strong></p>
+
+                        <h3 class="fw-400"> The most complete location guide</h3>
+
+                        <p>Everyone knows it, where are we going to eat tonight? Are there any nice new restaurants at the beach? We have carefully compiled the <a href="https://marbslifestyle.com/locations/" class="position-relative blue-color">most complete location guide of Marbella</a> . Only the top is on it, because we are demanding just like our visitors. From <a href="https://marbslifestyle.com/locations/restaurants/"class="position-relative blue-color">restaurants</a> to <a href="https://marbslifestyle.com/locations/hotels-and-resorts/" class="position-relative blue-color">hotels</a> , from private drivers to beach clubs and bars. We've listed it all.</p>
+
+                        <h3 class="fw-400"> Weekly inspiration through blogs</h3> 
+
+                        <p> We all like to go to our regular business, but we don't want to miss out on new hotspots either. Through our <a href="https://marbslifestyle.com/blog/"class="position-relative blue-color">blog</a>  we will keep you informed of the latest hotspots, and be the first to discover <a href="https://marbslifestyle.com/blog/"class="position-relative blue-color">the hidden secrets of Marbella</a> . In addition, we provide useful tips via the blog about all kinds of things such as things to do with the kids, wedding locations and much more. So keep a close eye on our weekly updated blog.</p>
+
+                        <h3 class="fw-400">Honest reviews and rating</h3> 
+
+                        <p>All <a href="https://marbslifestyle.com/reviews/"class="position-relative blue-color">reviews on Marbslifestyle .com</a> are carefully compiled, someone from our team has been to the restaurant or hotel one or more times or has used one of the many services we review. On our site you will only find 4 and 5 star reviews, we will not post anything with less stars. Only the best is good enough.</p>
+
+                        <h3 class="fw-400"> All events clearly arranged in one location </h3>
+
+                        <p> We have a complete overview of <a href="https://marbslifestyle.com/events/"class="position-relative blue-color">the best events in and around Marbella</a>. From the famous <a href="https://marbslifestyle.com/events/starlite/"class="position-relative blue-color">Starlite</a> with its world artists who come to perform there all summer to the parties at <a href="https://marbslifestyle.com/locations/beach-and-poolclubs/beach-clubs/nikki-beach-marbella/"class="position-relative blue-color">Nikki Beach</a> and <a href="https://marbslifestyle.com/locations/beach-and-poolclubs/beach-clubs/ocean-club/"class="position-relative blue-color">Ocean club</a>. We brought them together, planning your agenda has never been easier. Subscribe to the newsletter and never miss that one event again.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_area blue-bg plr">
+            <div class="footer center-content flex-wrap">
+                <div class="footer_widget footer_widget_logo only_mobile_view rm-desk"><div class="footer_logo"><img src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/footer_logo.svg" alt="marbslifestyle"></div></div>
+                <div class="footer_widget footer_widget1">
+                    <h5 class="sf fw-400 white-color">Popular locations</h5>
+                    <ul>
+                        <li><a href="#">Puente Romano</a></li>
+                        <li><a href="#">Marbella Club</a></li>
+                        <li><a href="#">Nosso Summer Club</a></li>
+                        <li><a href="#">Playa Padre</a></li>
+                        <li><a href="#">LEÑA</a></li>
+                        <li><a href="#">Tragabuches</a></li>
+                        <li><a href="#">Nikki Beach</a></li>
+                        <li><a href="#">Ocean Club</a></li>
+                        <li><a href="#">Oyana</a></li>
+                        <li><a href="#">Luuma</a></li>
+                        <li><a href="#">Thai Gallery</a></li>
+                        <li><a href="#">El Patio</a></li>
+                    </ul>
+                </div>
+                <div class="footer_widget footer_widget2">
+                    <h5 class="sf fw-400 white-color">Browse our guides</h5>
+                    <ul>
+                        <li><a href="#">Event guide</a></li>
+                        <li><a href="#">Location guide</a></li>
+                        <li><a href="#">Read our reviews</a></li>
+                        <li><a href="#">Marbella inspiration (blog)</a></li>
+                        <li><a href="#">What to do in Marbella</a></li>
+                        <li><a href="#">What to do with kids in Marbella</a></li>
+                        <li><a href="#">Top 25 restaurants</a></li>
+                        <li><a href="#">Top 10 hotels</a></li>
+                        <li><a href="#">Top 10 beach & pool clubs</a></li>
+                        <li><a href="#">Top 6 Luxury resorts</a></li>
+                        <li><a href="#">Top 10 restaurants Old Town</a></li>
+                        <li><a href="#">Top 15 breakfast</a></li>
+                        <li><a href="#">All rentals (coming soon)</a></li>
+                        <li><a href="#">Villa rentals (Coming soon)</a></li>
+                        <li><a href="#">Apartment rentals (coming soon)</a></li>
+                        <li><a href="#">New developments (coming soon)</a></li>
+                        <li><a href="#">Properties for sale (coming soon)</a></li>
+                        <li><a href="#">Apartments for sale (Coming soon)</a></li>
+                        <li><a href="#">Penthouses for sale (coming soon)</a></li>
+                        <li><a href="#">House for sale (coming soon)</a></li>
+                        <li><a href="#">Villas for sale (coming soon)</a></li>
+                        <li><a href="#">Boat & yacht rental</a></li>
+                        <li><a href="#">Premium Concierge Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer_widget footer_widget3">
+                    <h5 class="sf fw-400 white-color">About us</h5>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Advertise</a></li>
+                    </ul>
+                </div>
+                <div class="footer_widget footer_widget4">
+                    <h5 class="sf fw-400 white-color">Get In Contact</h5>
+                    <p><a href="https://marbslifestyle.com/">Marbslifestyle.com</a></p>
+                    <p>C. las Azaleas, 51 – 12<br> 29660 Marbella<br> Málaga, Spain</p>
+                    <p class="lifestyle_mail"><a href="mailto:info@marbslifestyle.nl">info@marbslifestyle.com</a><br>+31(0)6 1021 8338</p>
+                </div>
+                <div class="footer_widget footer_widget5">
+                    <h5 class="alf fw-400 white-color">Unlock the Secrets</h5>
+                    <h6 class="white-color fw-400 sf d-flex flex-nowrap align-center">Subscribe to our <span class="golden-color"> newsletter</span> <img loading="lazy" src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/icon_key_button3.svg" alt="icon key"></h6>
+                    <div class="news_letter_submit_box">
+                        <div class="_form-content">
+                            <input type="text" id="email" name="email" placeholder="Type your email" required="" data-name="email">
+                            <button id="_form_48_submit" class="_submit" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="footer_socila_media_box">
+                        <p>Follow us on our socials</p>
+                        <ul class="d-flex align-center">
+                            <li class="fb_social">
+                                <a href="https://www.facebook.com/Marbslifestyle/" target="_blank" rel="ugc">
+                                    <img width="10" height="18" loading="lazy" class="normal_icon" src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/social_facebook_logo_icon_footer.svg" alt="facebook">
+                                    <img width="10" height="18" loading="lazy" class="hover_icon" src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/social_facebook_logo_icon_hover.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="ins_social">
+                                <a href="https://www.instagram.com/marbslifestyle.com_/?hl=en" target="_blank" rel="ugc">
+                                    <img width="20" height="20" loading="lazy" class="normal_icon" src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/social_instagram_logo_icon_footer.svg" alt="instagram">
+                                    <img width="20" height="20" loading="lazy" class="hover_icon" src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/social_instagram_logo_icon_hover.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="youtube">
+                                <a href="#" target="_blank" rel="ugc">
+                                    <img width="22" height="15" loading="lazy" class="normal_icon" src="https://marbslifestyle.com/wp-content/uploads/2022/11/youtube-white.svg" alt="youtube">
+                                    <img width="22" height="15" loading="lazy" class="hover_icon" src="https://marbslifestyle.com/wp-content/uploads/2022/11/youtube-white-hover.svg" alt="youtube">
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright_area blue-bg plr">
+            <div class="copyright_wrap center-content">
+                <div class="copyright_box">
+                    <p>© 2023 All rights reserved</p>
+                    <ul id="menu-footer-menu" class="menu"><li id="menu-item-3515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-3515"><a rel="privacy-policy" href="https://marbslifestyle.com/privacy-policy/">Privacy Policy</a></li>
+                    <li id="menu-item-3516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3516"><a href="https://marbslifestyle.com/cookie-policy/">Cookie Policy</a></li>
+                    </ul>                        
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.slicknav.js"></script>
+        <script src="assets/js/jquery.marquee.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/s-custom.js"></script>
+        <script src="assets/js/jquery.dropzie.js"></script>
+        <script src="assets/js/date-picker.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+        <script>
+          (function($){
+
+            if (document.querySelector("#phone")) {
+             const input = document.querySelector("#phone");
+                window.intlTelInput(input, {
+                  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+                  separateDialCode: true,
+                  enablePlaceholder: false,
+                  initialCountry: "NL",
+
+                });
+            }
+
+            jQuery('.myDropzie4').dropzie();
+            jQuery('.myDropzie5').dropzie();
+            jQuery('.myDropzie6').dropzie();
+            jQuery('.myDropzie7').dropzie();
+            jQuery('.myDropzie8').dropzie();
+
+            $(".next-step1").click(function() {
+                $('.fild-col-step1').removeClass('panels_step_active');
+                $('.fild-col-step2').addClass('panels_step_active');
+                $('.step_col1').addClass('step_completed');
+                $('.step_col1').removeClass('active');
+                $('.step_col2').addClass('active');
+                $('.form_redesign').addClass('back_btn_on');
+            });
+            $(".next-step2").click(function() {
+                $('.fild-col-step2').removeClass('panels_step_active');
+                $('.fild-col-step3').addClass('panels_step_active');
+                $('.step_col2').removeClass('active');
+                $('.step_col2').addClass('step_completed');
+                $('.step_col3').addClass('active');
+            });
+            $(".next-step3").click(function() {
+                $('.fild-col-step3').removeClass('panels_step_active');
+                $('.fild-col-step4').addClass('panels_step_active');
+                $('.step_col3').removeClass('active');
+                $('.step_col3').addClass('step_completed');
+                $('.step_col4').addClass('active');
+            });
+            $(".contant_close_btn").click(function() {
+                $('.form_redesign').fadeOut('fast');
+            });
+
+             if(matchMedia('only screen and (max-width: 1280px)').matches) {
+                var mwo = jQuery('.marquee_item_wrap');
+                mwo.marquee({
+                    speed: 30,
+                    gap: 0,
+                    delayBeforeStart: 0,
+                    direction: 'left',
+                    duplicated: true,
+                    pauseOnHover: true,
+                    startVisible: true
+                });
+
+                //pause and resume links
+                jQuery('.pause').click(function(e){
+                    e.preventDefault();
+                    jQuery(mwo).trigger('pause');
+                });
+                jQuery('.resume').click(function(e){
+                    e.preventDefault();
+                    jQuery(mwo).trigger('resume');
+                });
+
+                //toggle
+                jQuery('.toggle').hover(function(e){
+                    jQuery(mwo).trigger('pause');
+                },function(){
+                    jQuery(mwo).trigger('resume');
+                })
+                .click(function(e){
+                    e.preventDefault();
+                })
+            };
+        
+         })(jQuery);
+        </script>
+        <script>
+            const elements = document.querySelectorAll('.read-more-by-ele-number');
+            elements.forEach((element)=>{
+                element.readMoreByElement({
+                    maxEle: 4,
+                    buttonHideText: "Read less",
+                    buttonShowText: "Read more",
+                });
+            })
+            </script>
+            <script>
+                let blog_re_slider = jQuery('.blog_re_slider');
+                let blogreItem = jQuery('.blog_re_slider .blog_style_wrap').length;
+                let blogreCount = Math.ceil(blogreItem / 3);
+                blog_re_slider.owlCarousel({
+                    loop:true,
+                    margin:0,
+                    items: 3,
+                    nav:true,
+                    dots:true,
+                    mouseDrag: true,
+                    touchDrag: true,
+                    autoHeight: true,
+                    dotsEach: blogreCount,
+                    responsiveClass:true,
+                    stagePadding: 0,
+                    responsive:{
+                        0:{
+                            items:2,
+                            mouseDrag: true,
+                            touchDrag: true
+                        },
+                        992:{
+                            items:3
+                        }
+                    }
+                });
+
+                let letest_blog_post = jQuery('.letest_blog_post');
+                let owlpostItem = jQuery('.letest_blog_post .blog_style_wrap').length;
+                let owlpostItemDots = Math.ceil(owlpostItem / 3);
+                letest_blog_post.owlCarousel({
+                    loop:true,
+                    nav:true,
+                    margin: 0,
+                    dotsEach:blogreCount,
+                    stagePadding: 0,
+                    dots:true,
+                    responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:2,
+                            dots:true,
+                            dotsEach:8,
+                        },
+                        991:{
+                            items:3,
+                        }
+                    }
+                });
+
+
+                (function($){ 
+                    var ourChoiceItem = jQuery(".our-choice-item").length;
+                    var ourChoiceCount = Math.ceil(ourChoiceItem / 3);
+                   jQuery(".our-choice-slider").owlCarousel({
+                        loop:true,
+                        nav:true,
+                        margin: 0,
+                        dotsEach:ourChoiceCount,
+                        stagePadding: 0,
+                        dots:true,
+                        responsiveClass:true,
+                        responsive:{
+                            0:{
+                                items:3,
+                                dots:true,
+                                dotsEach:8,
+                            },
+                            991:{
+                                items:8,
+                            }
+                        }
+                    });
+
+                })(jQuery);
+
+            </script>
+    </body>
+</html>

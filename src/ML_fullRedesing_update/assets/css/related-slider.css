@@ -1,0 +1,24 @@
+.relatedSlider_area {
+    background-image: url('../images/blog_bg1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.relatedSlider_wrap {
+    max-width: 1430px;
+    padding: 48px 0 80px 0;
+}
+.related_slider_bx {
+    width: auto;
+    margin: 0 -15px;
+}
+.related_slider .owl-stage {
+    display: flex;
+    flex-wrap: wrap;
+}
+.related_slider .blog_style_wrap { padding: 15px; }
+
+@media screen and (max-width: 991px) {
+    .relatedSlider_wrap {padding: 40px 0 50px 0;}
+    .related_slider .blog_style_wrap { width: calc(calc(100% - 0px) / 1); }
+}

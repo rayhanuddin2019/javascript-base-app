@@ -1,0 +1,50 @@
+.location_guide_area {
+    background-image: url('../images/blog_bg1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.location_guide_wrap {
+    max-width: 1800px;
+    padding: 55px 0 96px 0;
+}
+.location_guide_bx {
+    width: auto;
+    margin: 0 -15px;
+}
+.location_guide_slider { padding-bottom: 2px; }
+.location_guide_slider .owl-stage {
+    display: flex;
+    flex-wrap: wrap;
+}
+.location_guide_slider .blog_style_wrap {
+    padding: 15px;
+    padding-bottom: 18px;
+}
+
+@media screen and (max-width: 991px) {
+    .location-guide-box { padding-top: 13px; }
+    .location_guide_wrap {padding: 22px 0 34px 0;}
+    .location_guide_bx { margin: 0; }
+    .location_guide_slider {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px 16px;
+        padding-bottom: 16px;
+    }
+    .location_guide_slider .blog_style_wrap {
+        width: calc(calc(100% - 16px) / 2);
+        padding: 0;
+    }
+    .location_guide_slider .blog_bottm_style { justify-content: center; }
+    .location_guide_slider .blog_date { margin-top: 16px; }
+    .location_guide_bx .view-all-btn {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+    }
+    .location_guide_bx .view-all-btn.ion-ios-right::before {
+        top: 2px;
+        transform: rotate(90deg);
+    }
+}

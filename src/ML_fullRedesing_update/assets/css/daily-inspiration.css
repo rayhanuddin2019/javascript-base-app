@@ -1,0 +1,49 @@
+.daily_inspiration_area {
+    background-image: url('../images/blog_bg1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.daily_inspiration_wrap {
+    max-width: 1800px;
+    padding-bottom: 96px;
+}
+.daily_inspiration_bx {
+    width: auto;
+    margin: 0 -15px;
+}
+.daily_inspiration_slider { padding-bottom: 2px; }
+.daily_inspiration_slider .owl-stage {
+    display: flex;
+    flex-wrap: wrap;
+}
+.daily_inspiration_slider .blog_style_wrap {
+    padding: 15px;
+    padding-bottom: 18px;
+}
+
+@media screen and (max-width: 991px) {
+    .daily_inspiration_wrap { padding-top: 32px; padding-bottom: 34px;}
+    .daily_inspiration_bx { margin: 0; }
+    .daily_inspiration_slider {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px 16px;
+        padding-bottom: 16px;
+    }
+    .daily_inspiration_slider .blog_style_wrap {
+        width: calc(calc(100% - 16px) / 2);
+        padding: 0;
+    }
+    .daily_inspiration_slider .blog_bottm_style { justify-content: center; }
+    .daily_inspiration_slider .blog_date { margin-top: 16px; }
+    .daily_inspiration_bx .view-all-btn {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+    }
+    .daily_inspiration_bx .view-all-btn.ion-ios-right::before {
+        top: 2px;
+        transform: rotate(90deg);
+    }
+}

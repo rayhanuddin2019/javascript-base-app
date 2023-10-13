@@ -1,0 +1,180 @@
+.events-list-wrap {
+    padding: 35px 31px 32px 31px;
+}
+.events-title {
+    padding-bottom:18px;
+}
+.events-title h3 {
+    font-size:24px;
+    line-height:25px;
+}
+.line_bar {
+    width: 64px;
+    height: 1px;
+    margin-bottom:24px;
+}
+.upEvent_itemDate {
+    width:64px;
+    min-width:64px;
+}
+.upEvent_itemInfo {
+    padding-left:16px;
+}
+.upEvent_itemInfo h4{
+    line-height:22px;
+    transition: all .3s;
+}
+.upEvent_itemInfo span {
+    display:block;
+    line-height: 15px;
+    transition: all .3s; 
+}
+.upEvent_btn {
+    line-height: 15px;
+    display:block;
+    text-decoration:underline !important;
+}
+.upEvent_itemSingle:hover h4,
+.upEvent_itemSingle:hover span,
+.upEvent_itemSingle:hover strong,
+.upEvent_itemSingle:hover a{
+    color:var(--golden-color);
+}
+.calendar_hover {
+    display:none;
+}
+.upEvent_itemSingle:hover .calendar_hover {
+    display:block;
+}
+.upEvent_itemSingle:hover .calendar_norma {
+    display:none;
+}
+.upEvent_itemDate_inner {
+    position:relative;
+}
+.upEvent_Date {
+    bottom: 6px;
+    z-index: 0;
+}
+.upEvent_Date strong {
+    display:block;
+    line-height: 1; 
+    padding-bottom:1px;
+    transition: all .3s;
+}
+.upEvent_Date span {
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    display:block;
+}
+.upEvent_itemSingle {
+    padding-bottom:24px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.events-list-wrap .view-all-btn::after {
+    background-color:var(--white-color);
+}
+.events-list-wrap .view-all-btn {
+    display:inline-block;
+    margin-top:8px;
+}
+.events-list-wrap .view-all-btn:hover{
+    color: var(--golden-color);
+}
+.events-list-wrap .view-all-btn:hover::after {
+    background-color:var(--golden-color);
+}
+
+/*========================*/
+/*========================*/
+.ad-300x250 {
+    height: 258px;
+    max-height: 258px;
+    max-width: 310px;
+    margin-top: 38px;
+    margin-bottom: 12px;
+}
+.ad-300x600{
+   max-width: 310px;
+}
+
+/*=======resent post css =========*/
+.most-reset-box {
+    padding: 26px 10px 30px 34px;
+/*    border-radius:0px 0px 8px 8px;*/
+}
+.reset-post-photo {
+    width: 75px;
+    min-width:75px;
+    height: 72px;
+}
+.reset-post-photo img {
+    border-radius:8px;
+}
+.reset-post-info{
+    max-width: 205px;
+    padding-left: 15px;
+}
+.reset-post-info h4 {
+    line-height:20px;
+    transition: all .3s;
+}
+.reset-post-info p {
+    padding-bottom:2px;
+    transition: all .3s;
+    line-height: 16px;
+}
+.date-time {
+    line-height:16px;
+    transition:all .3s;
+    padding-left:17px;
+    background:url(../images/calendar-icon.svg)no-repeat left 1px;
+}
+.most-reset-post:hover a{
+    color:var(--golden-color);
+}
+.most-reset-post {
+    margin-bottom:24px;
+}
+.most-reset-post:last-child{
+    margin-bottom:0px;
+}
+.most-reset-box .events-title {
+    padding-bottom:26px;
+}
+
+/*catagory-sidebar*/
+.catagory-sidebar-box {
+    padding: 0px 28px 20px 34px;
+}
+.catagory-sidebar-box .blog-categorie {
+    gap: 10px 12px
+}
+.catagory-sidebar-box .blog-cat-item {
+    width: calc(calc(100% - 12px) / 2);
+}
+.catagory-sidebar-box  .blog-cat-item a > img{
+    height: 108px;
+    object-fit: cover;
+    min-height: auto;
+}
+.catagory-sidebar-box .blog-cat-inner img {
+    width: 38px;
+}
+.catagory-sidebar-box .blog-cat-inner span {
+    padding-top:8px;
+}
+.catagory-sidebar-box .blog-cat-inner::after {
+    height: 20px;
+}
+.catagory-sidebar-box .blog-cat-item:hover .blog-cat-inner::after {
+    margin-top: 0px;
+}
+
+@media screen and (max-width:1300px) {
+    .catagory-sidebar-box {
+        padding: 0px 0px 20px 34px;
+    }
+}

@@ -1,0 +1,121 @@
+@import url('./assets/css/reset.css');
+@import url('./assets/css/custom-icon.css');
+@import url('./assets/css/header.css');
+@import url('./assets/css/footer.css');
+@import url('./assets/css/sticky-header.css');
+@import url('./assets/css/single-banner.css');
+@import url('./assets/css/locations-category.css');
+@import url('./assets/css/home_category.css');
+@import url('./assets/css/global.css');
+@import url('./assets/css/hero.css');
+@import url('./assets/css/sidebar.css');
+@import url('./assets/css/home-ourChoice.css');
+@import url('./assets/css/choice-blog-area.css');
+@import url('./assets/css/owl.carousel.css');
+@import url('./assets/css/form.css');
+@import url('./assets/css/daily-inspiration.css');
+@import url('./assets/css/location-guide.css');
+@import url('./assets/css/slick.css');
+@import url('./assets/css/slick-theme.css');
+@import url('./assets/css/lightbox.min.css');
+@import url('./assets/css/single-blog-content.css');
+@import url('./assets/css/loc-filter.css');
+@import url('./assets/css/top_blog.css');
+@import url('./assets/css/api-inst.css');
+@import url('./assets/css/related-slider.css');
+@import url('./assets/css/opening-reservation.css');
+@import url('./assets/css/event.css');
+@import url('./assets/css/overview.css');
+
+/*
+Theme Name: Marbslifestyle
+Description: Marbslifestyle is a responsive WordPress theme.
+Author: Tenpixel
+Author URI: tenpixelui.com
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:  corporate, business, responsive, classic, freelancing.
+Text Domain: ddmg
+*/
+@font-face {
+    font-family: 'montserratregular';
+    src: url('assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratultra_light';
+    src: url('assets/fonts/montserrat_ultra_light-webfont.woff2') format('woff2'),
+         url('assets/fonts/montserrat_ultra_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('assets/fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('assets/fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('assets/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('assets/fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('assets/fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('assets/fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('assets/fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Angelic Bonques Free Script';
+    src: url('assets/fonts/AngelicBonquesFree-Script.woff2') format('woff2'),
+        url('assets/fonts/AngelicBonquesFree-Script.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sentinel';
+    src: url('assets/fonts/Sentinel-Bold.woff2') format('woff2'),
+        url('assets/fonts/Sentinel-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sentinel';
+    src: url('assets/fonts/Sentinel-Light.woff2') format('woff2'),
+        url('assets/fonts/Sentinel-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sentinel';
+    src: url('assets/fonts/Sentinel-Medium.woff2') format('woff2'),
+        url('assets/fonts/Sentinel-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}

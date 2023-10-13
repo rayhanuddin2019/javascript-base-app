@@ -1,0 +1,158 @@
+/*------- opening_reservation_area -------*/
+.opening_reservation_area { background-color: var(--white-color); }
+.opening_reservation_wrap {
+    padding-bottom: 38px;
+}
+.opening_reservation_bx { gap: 0 30px; }
+.opening_reservation_col {
+    width: calc(calc(100% - 30px) / 2);
+    border-color: #dbe4e7;
+    border-radius: 10px;
+}
+.opening_reservation_title { padding: 20px 20px 12px 20px; }
+.opening_reservation_title h6 {
+    color: var(--blue-color);
+    text-transform: uppercase;
+    line-height: 22px;
+}
+.opening_dayhour_bx {
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+}
+.opening_dayhour_row { min-height: 59px; }
+.opening_dayhour_row::after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1px;
+    height: 100%;
+    background-color: var(--white-color);
+}
+.opening_dayhour_row:nth-child(even) { background-color: var(--white-color); }
+.opening_dayhour_row:nth-child(odd) { background-color: #f7f9f9; }
+.opening_dayhour_row small,
+.opening_dayhour_row span {
+    width: calc(calc(100% - 0px) / 2);
+    color: var(--blue-color);
+    line-height: 1;
+    display: block;
+    padding: 0 20px;
+}
+.opening_dayhour_row small { text-transform: uppercase; }
+
+.reservation_address_bx { padding: 0 20px 20px 20px; }
+.opening_map_bx { padding-bottom: 20px; }
+#opening_map {
+    border: 1px solid #dbe4e7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.google_map_btn {
+    color: var(--blue-color);
+    max-width: fit-content;
+    display: block;
+    margin: 4px 0 0 auto;
+}
+.google_map_btn::after {
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--blue-color);
+}
+.reservation_address { padding: 0 60px 12px 0; }
+.reservation_address .footer_socila_media_box {
+    width: auto;
+    padding: 0;
+}
+.reservation_location {
+    color: var(--primary-color);
+    line-height: 22px;
+    background-image: url('../images/icon_menu_location.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 13px auto;
+    padding-left: 26px;
+}
+.reservation_btn_wrap { gap: 12px 0; }
+.reservation_btn_wrap .commen_btn {
+    width: 100%;
+    height: 40px;
+}
+.reservation_btn_wrap .reservation_btn {
+    background-color: var(--golden-color);
+    border-color: var(--golden-color)
+}
+.reservation_btn_wrap .reservation_btn:hover {
+    background-color: transparent;
+    color: var(--golden-color);
+}
+.reservation_btn_wrap .reservation_tel_btn {
+    background-color: var(--white-color);
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+.reservation_btn_wrap .reservation_tel_btn:hover {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+.reservation_btn_wrap .commen_btn span {
+    display: inline-block;
+    padding-left: 21px;
+}
+.reservation_btn_wrap .commen_btn span::before {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .opening_reservation_wrap { padding-bottom: 30px; }
+    .opening_dayhour_row small,
+    .opening_dayhour_row span { padding-right: 6px; }
+    .opening_reservation_bx { gap: 40px 0; }
+    .opening_reservation_col {
+        width: calc(calc(100% - 0px) / 1);
+        border-radius: 0px;
+        border-left:0px;
+        border-right:0px;
+    }
+    .opening_reservation_col .opening_reservation_title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .reservation_address {
+        padding-right: 0;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .google_map_btn { margin-top: 16px; }
+    .opening_reservation_col .footer_socila_media_box { position: static; }
+    .opening_reservation_col .footer_socila_media_box ul { gap: 0 12px; }
+    .opening_reservation_area {
+        padding:0px;
+    }
+    .opening_reservation_title {
+        padding: 10px 20px 10px 20px;
+    }
+    .opening_dayhour_row {
+        min-height: 42px;
+    }
+    .opening_dayhour_bx {
+        border-radius:0px;
+    }
+    .opening_reservation_bx .events-list-wrap {
+       padding: 36px 20px 30px 28px;
+       border-radius:0px;
+    } 
+    .opening_reservation_bx  .events-title span {
+        padding-top:6px;
+        color: rgba(255,255,255,.4);
+        display:block;
+    }
+    .opening_reservation_bx .events-title {
+        padding-bottom: 24px;
+    }
+}

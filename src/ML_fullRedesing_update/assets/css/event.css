@@ -1,0 +1,153 @@
+.event-blog-schedule {
+    gap: 18px;
+}
+.event-blog-area  {
+    padding-top:45px;
+}
+.framEvent_btn {
+    --EventColor1:#0EDA8B;
+    border-radius: 3px;
+    border: 1px solid var(--EventColor1);
+    padding: 0 18px 0 25px;
+    padding-left: 36px;
+    color: var(--blue-color);
+    font-size: 17px;
+    height:55px;
+}
+.tomorrow_btn.framEvent_btn{
+    --EventColor1: var(--blue-color);
+}
+.this_Week_btn.framEvent_btn{
+    --EventColor1: #BD944E;
+}
+.next_Week_btn.framEvent_btn{
+    --EventColor1: #77CCF0;
+}
+.framEvent_btn:hover {
+    background:var(--EventColor1);
+    color:#fff;
+}
+.framEvent_btn:hover::before {
+    background:#fff;
+}
+.framEvent_btn::before {
+    content:'';
+    position:absolute;
+    width:8px;
+    height:8px;
+    border-radius:100%;
+    left: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    background:var(--EventColor1);
+}
+.evetnBlog-filer {
+   width: 31.82%;
+    max-width: 296px;
+}
+.evetnBlog-filer .drp-btn {
+    height: 55px;
+    border: 1px solid #dfe5e6;
+    border-radius: 3px;
+}
+.evetnBlog-filer .filter-item.active .filter_checkbox_area {
+    top:65px;
+    max-height:initial;
+    box-shadow: 0 2px 70px 0 rgb(0 0 0 / 15%);
+    border-radius:6px;
+    z-index:10;
+}
+.evetnBlog-filer .filter_checkbox_area .radio-btn {
+    padding: 0 15px 0 21px;
+    margin-bottom:0px;
+    height: 55px;
+    border-top: 1px solid #e2e8e9;
+}
+.evetnBlog-filer .filter_checkbox_area .radio-btn label {
+    height:100%;
+}
+
+@media screen and (max-width:1440px) {
+    .evetnBlog-filer{
+        width: 26%;
+        padding-left: 15px;
+    }
+}
+
+.event_box {
+    gap: 30px 24px;
+    padding: 46px 0 30px 0;
+}
+.event_box .blog_style_wrap {
+    width: calc(calc(100% - 48px) / 3);
+    padding: 0;
+}
+
+.event_box .blog_style_info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 14px;
+}
+.event_box .blog_catg_name { 
+    margin-top: auto;
+}
+.booking_bottom_style {
+    min-height: 62px;
+}
+.event_box .more_location { padding-top: 8px; }
+@media screen and (max-width:1350px) {
+
+.event_box .blog_style_wrap {
+    width: calc(calc(100% - 24px) / 2);
+}
+
+}
+@media screen and (max-width:991px) {
+.event_box .blog_style_wrap {
+    width: calc(calc(100%) / 1);
+}
+.event-blog-schedule {
+    gap: 8px;
+}
+.framEvent_btn {
+    font-size: 14px;
+    height: 35px;
+    padding: 0 9px;
+    width: calc(calc(100% - 8px)/2);
+    justify-content: center;
+}
+.framEvent_btn::before {
+    position: initial;
+    transform: initial; 
+    margin-right: 5px;
+}
+.evetnBlog-filer {
+    padding-top: 16px;
+    width: 100%;
+    padding-left: 0;
+    max-width: 100%;
+}
+.evetnBlog-filer .filter-item:last-child .drp-btn { border-radius: 4px; }
+.evetnBlog-filer .filter_checkbox_area .radio-btn label span {
+    --widthHeight: 16px;
+}
+.evetnBlog-filer .filter_checkbox_area .radio-btn input:checked ~ label span::before {
+    --widthHeight: 10px;
+}
+.evetnBlog-filer .filter-item.active .filter_checkbox_area {
+    position: absolute;
+}
+.blog-col1-info .booking_bottom_style {
+    padding: 10px 15px;
+}
+.event_box .blog_even_date {
+    justify-content: flex-start;
+}
+.event_box .blog_style_wrap:hover .booking_bottom_style {
+    padding-left: 15px;
+}
+.event_box {
+    padding-top: 37px;
+}
+}

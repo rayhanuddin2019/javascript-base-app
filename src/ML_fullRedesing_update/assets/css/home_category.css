@@ -1,0 +1,67 @@
+
+.home_page_category_area {
+    background-image: url(https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/blog_bg1.png);
+    background-repeat: repeat;
+    background-position: left top;
+    padding-bottom: 70px;
+}
+.home_page_category { margin-top: -65px; z-index: 20; }
+.home_page_category {
+    max-width: 1540px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.24);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.24);
+}
+
+.home_page_category .location-guide-box {
+    width: 70.45%;
+    padding: 46px 76px 65px 76px;
+}
+.key_guide_box {
+    width: 26px;
+    top: -40px;
+    z-index: 1;
+}
+.home_page_category .events-list-wrap {
+    width: 29.55%;
+    padding: 34px 31px 18px 74px;
+}
+.home_page_category .events-title {
+    padding-bottom: 36px;
+}
+.home_page_category .events-title span { padding-left: 30px;   top: 2px;}
+
+
+@media screen and (max-width: 1480px){
+    .home_page_category .location-guide-box {
+        padding: 40px 55px 20px 55px;
+    }
+    .home_page_category .events-list-wrap {
+        padding: 34px 31px 18px 30px;
+    }
+}
+@media screen and (max-width: 1360px){
+  .home_page_category .events-title span{
+    padding-top:15px;
+    padding-left:0px;
+    width:100%;
+  }
+}
+@media screen and (max-width: 991px){
+    .home_page_category { margin-top: -10px; }
+    .home_page_category .location-guide-box{
+        width:100%;
+        padding: 40px 20px 30px 20px;
+    }
+    .home_page_category_area {
+        padding:0px;
+    }
+    .home_page_category {
+        border-radius:6px 6px 0px 0px;
+        box-shadow:none;
+    }
+    .home_page_category .blog-common-title {
+        padding-bottom:12px;
+    }
+}

@@ -1,0 +1,29 @@
+/*-------------- api_instSlider_area --------------*/
+.api_instSlider_wrap { padding-bottom: 30px; }
+.api_instSlider_bx {
+    background-color: #f7f9f9;
+    border-radius: 8px;
+    padding: 24px 0 48px 0;
+}
+.api_inst_title { padding: 0 17px 23px 17px;}
+.api_inst_title span {
+    color: var(--blue-color);
+    line-height: 20px;
+    background-image: url('../images/social_instagram_logo_icon.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 22px auto;
+    display: inline-block;
+    padding: 3px 0 3px 34px;
+}
+.api_inst_slider { padding-bottom: 5px; }
+
+@media screen and (max-width:991px) {
+    .api_instSlider_bx { border-radius: 0; }
+    .api_instSlider_area {
+       padding:0px;
+    }
+    .api_inst_slider.owl-carousel .owl-stage {
+        padding-left: 0px !important;
+    }
+}
