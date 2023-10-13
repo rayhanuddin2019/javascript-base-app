@@ -1,6 +1,6 @@
 # javascript-base-app
 
-#Features
+## Features
 
 1. Observer design pattern - module can communicate each other
 2. Pub Sub Pattern - Broadcast something to all modules or specific subscriber module
@@ -8,6 +8,7 @@
 4. MVC - simple mvc that render components
 5. Singletone base object
 6. Seperate module - You can run single module if need.
+7. Callback
 
 ## Callback 
 
