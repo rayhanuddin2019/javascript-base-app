@@ -13,14 +13,22 @@
 ## Global Notify
 
 notify all subsribers globally when somethings happen 
+
 ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/b4703e90-b333-4079-923e-f0988c442978)
+
+    sandbox.Observable.notify(" Notify After Dom Ready");
+    
+    sandbox.Observable.subscribe(function (data) {
+      console.log("subcriber 1", data);
+    });
 
 ## Event Based Oberserver 
 
  ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/6b229e86-5098-4518-b51a-e74be55744a5)
 
  ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/b8e7a276-188f-43a8-9395-baffc0dd3eca)
- 
+
+  
 ## Callback 
 
 Module has start end callback function 
