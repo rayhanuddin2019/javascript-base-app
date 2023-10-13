@@ -10,6 +10,12 @@
 6. Seperate module - You can run single module if need.
 7. Callback
 
+## Global Notify
+
+notify all subsribers globally when somethings happen 
+![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/b4703e90-b333-4079-923e-f0988c442978)
+
+
 ## Callback 
 
 Module has start end callback function 
