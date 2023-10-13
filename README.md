@@ -42,17 +42,17 @@ Module has start end callback function
  add fetch , generate html, manipulate user data
  ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/4cba165e-e265-4ef1-830d-5eefa8817306)
 
- `
-    this.addComponent(initial_component); 
-    sandbox.showComponent("months");    
- `
+ 
+     this.addComponent(initial_component); 
+     sandbox.showComponent("months");    
+ 
 ## Module run
 
   We can run single module or all module instance 
   
-     `tCore.startAll();`
+     tCore.startAll();
   
-     `tCore.start('registered_module_name');`
+     tCore.start('registered_module_name');
   
 Copyright (c) 2023 Rayhan Uddin. All rights reserved.
 
