@@ -14,6 +14,9 @@
  * @usage2 data-bind="name" in text field;
  * @usage2 Call from anywhere
 
+![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/f402ea8c-cf4f-4364-95b0-c88e39c360df)
+
+
 ## MVC 
 
  ![image](https://github.com/rayhanuddin2019/javascript-base-app/assets/47168831/6b229e86-5098-4518-b51a-e74be55744a5)
