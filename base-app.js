@@ -132,11 +132,11 @@ dFanatics.getInstance = function (isettings) {
     this.setSettings = function (settings) {
       this.settings = Object.assign(
         {
-          AfterModuleStart: function () {},
-          BeforeModuleStart: function () {},
+          AfterModuleStart: function () { },
+          BeforeModuleStart: function () { },
           uniqueId: uniqueId,
           container: null,
-          debug : false,
+          debug: false,
           is_mobile: dFanatics.Utils.Browser.is_mobile()
         },
         settings
@@ -190,7 +190,7 @@ dFanatics.getInstance = function (isettings) {
       moduleSettings = {};
 
     function Sandbox(sandbox) {
-      sandbox.init = function () {};
+      sandbox.init = function () { };
 
       sandbox.componentsByName = {};
 
@@ -200,29 +200,33 @@ dFanatics.getInstance = function (isettings) {
       };
 
       sandbox.showComponent = function (name) {
-        this.currentComponent = this.componentsByName[name];
-        
-        if(this.currentComponent.container instanceof Element){
-          if (this.currentComponent) {
-            this.currentComponent.controller(this.currentComponent.model);
+        if (name === undefined) {
+          if (sandbox.settings.debug) {
+            console.info(`Please provide component name`);
           }
-          this.updateView();          
-        }else{
-           if(sandbox.settings.debug){
-             console.info(`HTML Element Container not found in ${name} component . You can override showcomponet from module register`);
-           }           
+          return '';
         }
-        
+
+        this.currentComponent = this.componentsByName[name];
+        if (this.currentComponent) {
+          this.currentComponent.controller(this.currentComponent);
+        }
+        this.updateView();
       };
       // Can be override from module
-      sandbox.updateView = function () {       
-
-        if (this.currentComponent) {
-          this.currentComponent.container.innerHTML = this.currentComponent.view(
-            this.currentComponent.model
-          );
+      sandbox.updateView = function () {
+        if (this.currentComponent.container instanceof Element) {
+          if (this.currentComponent) {
+            this.currentComponent.container.innerHTML = this.currentComponent.view(
+              this.currentComponent.model
+            );
+          } else {
+            this.currentComponent.container.innerHTML = `<h3>Not Found</h3>`;
+          }
         } else {
-          this.currentComponent.container.innerHTML = `<h3>Not Found</h3>`;
+          if (sandbox.settings.debug) {
+            console.info(`HTML Element Container not found in ${this.currentComponent.name} component . You can override showcomponet from module register`);
+          }
         }
       };
 
@@ -253,26 +257,26 @@ dFanatics.getInstance = function (isettings) {
         new Sandbox(this),
         moduleSettings
       );
-          
+
       try {
-     
-          if (
-            this.settings.hasOwnProperty("BeforeModuleStart") &&
-            typeof this.settings.BeforeModuleStart === "function"
-          ) {
-            this.settings.BeforeModuleStart(
-              moduleId,
-              moduleData[moduleId].instance
-            );
-          }
-          moduleData[moduleId].instance.init();
-          if (
-            this.settings.hasOwnProperty("AfterModuleStart") &&
-            typeof this.settings.AfterModuleStart === "function"
-          ) {
-            this.settings.AfterModuleStart(moduleId, moduleData[moduleId].instance);
-          }
-        } catch (e) { console.log(e); }
+
+        if (
+          this.settings.hasOwnProperty("BeforeModuleStart") &&
+          typeof this.settings.BeforeModuleStart === "function"
+        ) {
+          this.settings.BeforeModuleStart(
+            moduleId,
+            moduleData[moduleId].instance
+          );
+        }
+        moduleData[moduleId].instance.init();
+        if (
+          this.settings.hasOwnProperty("AfterModuleStart") &&
+          typeof this.settings.AfterModuleStart === "function"
+        ) {
+          this.settings.AfterModuleStart(moduleId, moduleData[moduleId].instance);
+        }
+      } catch (e) { console.log(e); }
 
     };
     this.stop = function (moduleId) {

@@ -2,11 +2,19 @@
 
 // toggle dropdown in location page filter
 if(document.querySelectorAll('.location_detail_filter_box .drp-btn')){
-    const drpButtons = document.querySelectorAll('.location_detail_filter_box .drp-btn');
+    const drpButtons = document.querySelectorAll('.location_detail_filter_box .drp-btn');   
     drpButtons.forEach((button)=>{
         button.addEventListener('click', function(e){
             e.preventDefault();
-            !this.parentElement.classList.contains('active') ? this.parentElement.classList.add('active') : this.parentElement.classList.remove('active');
+            const current = this;
+            drpButtons.forEach(function(nbutton){
+                if(nbutton === current){
+                    !nbutton.parentElement.classList.contains('active') ? nbutton.parentElement.classList.add('active') : nbutton.parentElement.classList.remove('active');
+                }else{
+                    nbutton.parentElement.classList.remove('active')
+                }  
+            });
+            
         })
     });
 }
@@ -16,15 +24,16 @@ if(document.querySelectorAll('.location_detail_filter_box .drp-btn')){
 if(document.querySelectorAll('.filter_checkbox_area .radio-btn input')){
     const locFilInputs = document.querySelectorAll('.filter_checkbox_area .radio-btn input');
     locFilInputs.forEach((input)=>{
-        input.addEventListener('click', function(){
+        input.addEventListener('click', function(event){
             //remove checked from all items according to parent          
             var parent = this.closest('.filter_checkbox_area');
+            var cele = event;
             const drop = parent.previousElementSibling;
             const allChecked = parent.querySelectorAll('input:checked');
             const allLabels = parent.querySelectorAll('input:checked ~ label');
             const text = drop.getAttribute('data-text');
+            const name = parent.getAttribute('data-name') || text;
             if( parent.getAttribute('data-single') ){
-
                 const temp = this.checked;                
                 allChecked.forEach((input)=>input.checked = false);
                 allLabels.forEach((label)=>!label.classList.contains('active') ? label.classList.add('active') : label.classList.remove('active'));
@@ -38,24 +47,22 @@ if(document.querySelectorAll('.filter_checkbox_area .radio-btn input')){
                         drop.innerHTML = text;
                     }
                 }
-
             }else{
-
                 if( text ) {
                     if(allChecked.length){                   
                         drop.innerHTML = allChecked[0].nextElementSibling.innerHTML;
                     }else{
                         drop.innerHTML = text;
                     } 
-                }
-                               
-            }
-    
-            this.dispatchEvent(
-                new CustomEvent("custom_select_change", {
+                }                               
+            }    
+            parent.dispatchEvent(
+                new CustomEvent('Onselect:change', {
                     detail: {
-                          checked: this.checked,
-                          parent : parent  
+                        checked: this.checked,
+                        current: cele,
+                        name: name,
+                        values: parent.querySelectorAll('input:checked')                
                     }                   
                   })
             );
