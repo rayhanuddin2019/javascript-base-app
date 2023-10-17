@@ -61,7 +61,6 @@ dFanatics.Utils.DataBind = function () {
       if (!dFanatics.scopes.hasOwnProperty(prop)) {
         //value to populate with newvalue
         var value;
-
         Object.defineProperty(dFanatics.scopes, prop, {
           set: function (newValue) {
             value = newValue;
@@ -105,9 +104,37 @@ dFanatics.Utils.Browser = (function (bglobal) {
   }
 })(window);
 
+dFanatics.Utils.addEventListener = function(el, eventName, eventHandler, selector) {
+  if (selector) {
+    const wrappedHandler = (e) => {
+      if (!e.target) return;
+      const el = e.target.closest(selector);
+      if (el) {
+        eventHandler.call(el, e);
+      }
+    };
+    el.addEventListener(eventName, wrappedHandler);
+    return wrappedHandler;
+  } else {
+    const wrappedHandler = (e) => {
+      eventHandler.call(el, e);
+    };
+    el.addEventListener(eventName, wrappedHandler);
+    return wrappedHandler;
+  }
+}
+
+dFanatics.Utils.On = function(eventName,elementSelector,handler){
+  document.addEventListener(eventName, (event) => {
+    if (event.target.closest(elementSelector)) {
+      handler.call(event.target, event);
+    }
+  });
+}
+
 /**
- * The Media namespace.
- * @class Media
+ * The Filter namespace.
+ * @class Filter
  * @static
  */
 
@@ -252,6 +279,7 @@ dFanatics.getInstance = function (isettings) {
         instance: null
       };
     };
+
     this.start = function (moduleId) {
       moduleData[moduleId].instance = moduleData[moduleId].creator(
         new Sandbox(this),
@@ -269,13 +297,16 @@ dFanatics.getInstance = function (isettings) {
             moduleData[moduleId].instance
           );
         }
+
         moduleData[moduleId].instance.init();
+
         if (
           this.settings.hasOwnProperty("AfterModuleStart") &&
           typeof this.settings.AfterModuleStart === "function"
         ) {
           this.settings.AfterModuleStart(moduleId, moduleData[moduleId].instance);
         }
+
       } catch (e) { console.log(e); }
 
     };
@@ -302,18 +333,20 @@ dFanatics.getInstance = function (isettings) {
       }
     };
   }
-  /**
+  /**=======================================
    * Object instance singleton
-   **/
+   **=====================================*/
   if (instance == null) {
     instance = new Core(isettings);
     // Hide the constructor so the returned object can't be new'd...
     instance.constructor = null;
   }
+
   instance.setSettings(isettings);
   window.addEventListener("DOMContentLoaded", function () {
     dFanatics.Utils.DataBind();
   });
+
   return instance;
 };
 

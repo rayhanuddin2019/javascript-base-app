@@ -36,10 +36,8 @@ var tCore = dFanatics.getInstance({
         });
     };
 
-    sandbox.router = function () {
-      
-         sandbox.showComponent("months");        
-      
+    sandbox.router = function () {      
+      sandbox.showComponent("months");       
     };
     return sandbox;
   });

@@ -7,7 +7,36 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
-        <link rel="stylesheet" href="./style.css">
+        <style>
+            @import url('./assets/css/reset.css');
+            @import url('./assets/css/custom-icon.css');
+            @import url('./assets/css/header.css');
+            @import url('./assets/css/footer.css');
+            /* @import url('./assets/css/sticky-header.css'); */
+            /* @import url('./assets/css/single-banner.css'); */
+            @import url('./assets/css/locations-category.css');
+            @import url('./assets/css/home_category.css');
+            @import url('./assets/css/global.css');
+            @import url('./assets/css/hero.css');
+            @import url('./assets/css/sidebar.css');
+            @import url('./assets/css/home-ourChoice.css');
+            @import url('./assets/css/choice-blog-area.css');
+            @import url('./assets/css/owl.carousel.css');
+            @import url('./assets/css/form.css');
+            @import url('./assets/css/daily-inspiration.css');
+            @import url('./assets/css/location-guide.css');
+            @import url('./assets/css/slick.css');
+            @import url('./assets/css/slick-theme.css');
+            @import url('./assets/css/lightbox.min.css');
+            @import url('./assets/css/single-blog-content.css');
+            @import url('./assets/css/loc-filter.css');
+            @import url('./assets/css/top_blog.css');
+            @import url('./assets/css/api-inst.css');
+            @import url('./assets/css/related-slider.css');
+            @import url('./assets/css/opening-reservation.css');
+            /* @import url('./assets/css/event.css'); */
+            @import url('./assets/css/overview.css');
+        </style>
         <script src="../../base-app.js"></script>
         <script src="my-app-filter.js"></script>
 
@@ -508,7 +537,7 @@
             <div class="locations_category_box center-content">
                 <div class="content_left_part">
 
-                    <div class="location_detail_filter_box pt-40 mb-fixed">
+                    <div class="location_detail_filter_box pt-40 mb-fixed ml-tab-wrapper">
                         <a href="javascript:void(0)" class="search-close-btn only_mobile_view font-s14 pb-md-20">Go back</a>
                         <div class="search_category_top d-flex align-center pb-12 pb-md-20">
                             <a href="javascript:;" class="blf font-s14 active" data-tab="1">Search by category</a>
@@ -517,7 +546,7 @@
                         </div>
 
                         <div class="tabs-content">
-                            <div class="tab-item tab-item-1 active">
+                            <div data-target="1" class="tab-item tab-item-1 active">
                                 <form action="#" class="d-flex flex-dir-col-mb">
                                     <div class="filter-item position-relative filter-item-1 wp-34 w-mb-100">
                                         <a href="#" class="drp-btn mlf blue-color position-relative d-flex align-center w-100" data-text="Category">Category</a>
@@ -645,15 +674,15 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="tab-item tab-item-2">
-                                <input type="search" class="cat-search-by-name-input w-100 white-bg-color outline-0" placeholder="Search by name">
+                            <div data-target="2" class="tab-item tab-item-2">
+                                <input type="search" class="cat-search-by-name-input ml-search-by-name w-100 white-bg-color outline-0" placeholder="Search by name">
                                 <button type="submit" class="cat-search-by-name-btn position-absolute white-color text-center no-repeat pointer transition-all-ease-03s h-100 bg-position-center outline-0"></button>
                             </div>
                         </div>
                         <div class="search-cat-result blf fw-400 font-s14 pt-13 only_desktop_view">4 search results</div>
                         <div class="search-action-md d-flex flex-col pt-40">
                             <a href="javascript:;" class="reset_all_location_filter bg-position-center blf margin-0-auto font-s14 fw-300">Remove all filters</a>
-                            <button type="submit" class="filter-search-btn border-0 outline-0 mt-25 golden-bg-color fw-300 white-color blf text-center">SEARCH</button>
+                            <button class="filter-search-btn border-0 outline-0 mt-25 golden-bg-color fw-300 white-color blf text-center">SEARCH</button>
                         </div>
                     </div>
 
