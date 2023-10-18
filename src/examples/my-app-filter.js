@@ -15,9 +15,10 @@ var tCore = dFanatics.getInstance({
                 name     : "blog_filter",
                 container: document.querySelector(".ml-filter-content-area"),
                 dom      : {
-                  loadmore: document.querySelector('.ml-blog-view-more'),
-                  reset   : document.querySelector('.reset_all_location_filter'),
-                  popup_box : document.querySelector('.location_detail_filter_box')                  
+                  loadmore    : document.querySelector('.ml-blog-view-more'),
+                  reset       : document.querySelector('.reset_all_location_filter'),
+                  popup_box   : document.querySelector('.location_detail_filter_box'),
+                  search_count: document.querySelector('.search-result-count')
                 },
                 request_options: {
                   action  : 'blog_filter_action',
@@ -33,7 +34,7 @@ var tCore = dFanatics.getInstance({
                   const blogHTML = model.blog_content.reduce(
                     (html, post) => html + `<div class="blog_style_wrap">
                     <div class = "blog_style_img position-relative w-100">
-                    <a href  = "#"><img class = "w-100 blog_main_img" decoding = "async" src = "https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt = "Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
+                    <a   href  = "#"><img class = "w-100 blog_main_img" decoding = "async" src = "https://marbslifestyle.com/wp-content/uploads/2023/05/Nosso-summer-Club-lux-lounge-area-600x400.jpeg" alt = "Finding the Perfect Balance: Luxury Family-Friendly Hotels in Marbella"></a>
                     </div>                
                     <div  class = "blog_style_info_bx">
                     <div  class = "blog_style_info">
@@ -76,7 +77,8 @@ var tCore = dFanatics.getInstance({
                   }).then(function(res){
                     return res.json();
                   }).then(function(data){
-                    component.model.blog_content = data;
+                                             component.model.blog_content              = data;
+                    sandbox.componentsByName['blog_filter'].dom.search_count.innerHTML = `${data.length} search results` ;
                    // if(!data.hasnext){
                       component.request_options.has_more = false;  // check query next  
                     //}                                    
@@ -93,7 +95,7 @@ var tCore = dFanatics.getInstance({
                               
               },
               request_options: {
-                action  : 'blog_autocomplete_action',                            
+                action: 'blog_auto_complete_action',
               },
               // observable
               model: {
@@ -147,18 +149,69 @@ var tCore = dFanatics.getInstance({
                 }).then(function(res){
                   return res.json();
                 }).then(function(data){
-                  component.model.blog_content = data;  
+                  component.model.blog_content = data;
                 });                  
              
               }
-            };  
+            };            
+             // search by name
+            var subcategory_component = {
+              name     : "subcategory_load",
+              container: document.querySelector(".filter_checkbox_area.subcategory"),
+              dom      : {
+                              
+              },
+              request_options: {
+                action: 'blog_subcategory_action',
+              },
+              // observable
+              model: {
+                sub_category_content: [],
+                filter_options      : {}
+              },
+              view(model) {
+                const categoryHTML = model.sub_category_content.reduce(
+                  (html, post) => html + `<div class="radio-btn">
+                  <input class = "loc-cat-radio-check" type                                                            = "checkbox" id                       = "radio_21"  value = "sub-cat-1" name = "radio">
+                  <label class = "w-100 d-flex justify-content-between align-center blue-color mlf fw-300 pointer" for = "radio_21">${post.title}<span class = "position-relative transition-all-ease-03s border-50-p"></span></label>
+              </div>`,
+                  ""
+                );
+                return `${categoryHTML}`;
+              },          
+              async controller(component) {                
+                // data canbe update from rest api / ajax
+                var url = 'https://jsonplaceholder.typicode.com/posts';
+                    url = url + "?" + new URLSearchParams(Object.assign(component.request_options,component.model.filter_options)).toString();
+              
+                await fetch(url, {
+                  method     : "GET",    // *GET, POST, PUT, DELETE, etc.  
+                  mode       : "cors",
+                  credentials: "omit",   // include, *same-origin, omit
+                  headers    : {
+                    "Content-Type": "application/json",
+                     //'Content-Type': 'application/x-www-form-urlencoded',
+                  },
+                  redirect      : "follow",        // manual, *follow, error
+                  referrerPolicy: "no-referrer",   // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                  //body: Object.assign(model.request_options,model.filter_options), // body data type must match "Content-Type" header
+                }).then(function(res){
+                  return res.json();
+                }).then(function(data){
+                  component.model.sub_category_content = data;
+                });                  
+             
+              }
+            }; 
             sandbox.addComponent(post_component);
             sandbox.addComponent(title_component);
+            sandbox.addComponent(subcategory_component);
             sandbox.router();
         });
     };
 
-    sandbox.router = function () {      
+    sandbox.router = function () {
+         // default blog show       
          sandbox.showComponent('blog_filter');
          // filter change   
          document.querySelectorAll('.filter_checkbox_area').forEach((option) => { 
@@ -190,57 +243,57 @@ var tCore = dFanatics.getInstance({
         dFanatics.Utils.On('click','.search-close-btn,.filter-search-btn', sandbox.mobileOpenCloseCallback.bind({open: 0}));          
       };
 
-    sandbox.mobileOpenCloseCallback = function(e){
-      e.preventDefault();    
-      if(this.open){
-        sandbox.componentsByName['blog_filter'].dom.popup_box.classList.add('active');
-      }else{
-        sandbox.componentsByName['blog_filter'].dom.popup_box.classList.remove('active');
-      }     
-    } 
+      sandbox.mobileOpenCloseCallback = function(e){
+        e.preventDefault();        
+        if(this.open){
+          sandbox.componentsByName['blog_filter'].dom.popup_box.classList.add('active');
+        }else{
+          sandbox.componentsByName['blog_filter'].dom.popup_box.classList.remove('active');
+        }     
+      } 
     return sandbox;
   });
 
   tCore.register("dom:select", function (sandbox, moduleSettings) {
     sandbox.selectOptionCallback = function(event){
        //remove checked from all items according to parent          
-       var   parent     = this.closest('.filter_checkbox_area');
+       var   parent     = this.closest( '.filter_checkbox_area' );
        var   cele       = event;
        const drop       = parent.previousElementSibling;
-       const allChecked = parent.querySelectorAll('input:checked');
-       const allLabels  = parent.querySelectorAll('input:checked ~ label');
-       const text       = drop.getAttribute('data-text');
-       const name       = parent.getAttribute('data-name') || text;
+       const allChecked = parent.querySelectorAll( 'input:checked' );
+       const allLabels  = parent.querySelectorAll( 'input:checked ~ label' );
+       const text       = drop.getAttribute( 'data-text' );
+       const name       = parent.getAttribute( 'data-name' ) || text;
        if( parent.getAttribute('data-single') ){
           const temp = this.checked;
-          allChecked.forEach((input)=>input.checked = false);
-          allLabels.forEach((label)=>!label.classList.contains('active') ? label.classList.add('active') : label.classList.remove('active'));
+          allChecked.forEach((input) => input.checked = false);
+          allLabels.forEach((label) => !label.classList.contains( 'active' ) ? label.classList.add( 'active' ) : label.classList.remove( 'active' ) );
           // checked only clicked item            
           this.checked = temp;
           if( text ) {
-              if( this.checked ){            
-                  drop.innerHTML = this.nextElementSibling.innerHTML;
-              }else{
-                  drop.innerHTML = text;
-              }
+            if( this.checked ){            
+                drop.innerHTML = this.nextElementSibling.innerHTML;
+            }else{
+                drop.innerHTML = text;
+            }
           }
        }else{
           if( text ) {
-              if(allChecked.length){                   
-                  drop.innerHTML = allChecked[0].nextElementSibling.innerHTML;
-              }else{
-                  drop.innerHTML = text;
-              } 
+            if(allChecked.length){                   
+                drop.innerHTML = allChecked[0].nextElementSibling.innerHTML;
+            }else{
+                drop.innerHTML = text;
+            } 
           }                               
        }    
        parent.dispatchEvent(
           new CustomEvent('Onselect:change', {
-              detail: {
-                  checked: this.checked,
-                  current: cele,
-                  name   : name,
-                  values : parent.querySelectorAll('input:checked')
-              }                   
+            detail: {
+              checked: this.checked,
+              current: cele,
+              name   : name,
+              values : parent.querySelectorAll('input:checked')
+            }                   
           })
        );
     }
